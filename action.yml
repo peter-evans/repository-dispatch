@@ -1,0 +1,20 @@
+name: 'Repository Dispatch'
+description: 'Create a repository dispatch event'
+inputs:
+  token:
+    description: 'A repo scoped GitHub Personal Access Token'
+    required: true
+  repository:
+    description: 'The full name of the repository to send the dispatch. Defaults to the current repository.'
+  event-type:
+    description: 'A custom webhook event name.'
+    required: true
+  client-payload:
+    description: 'JSON payload with extra information about the webhook event that your action or worklow may use. Default: {}'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'target'  
+  color: 'gray-dark'
+  

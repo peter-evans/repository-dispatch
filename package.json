@@ -1,0 +1,27 @@
+{
+  "name": "repository-dispatch",
+  "version": "1.0.0",
+  "description": "Create a repository dispatch event",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-evans/repository-dispatch.git"
+  },
+  "keywords": [],
+  "author": "Peter Evans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peter-evans/repository-dispatch/issues"
+  },
+  "homepage": "https://github.com/peter-evans/repository-dispatch#readme",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "@octokit/request": "^5.1.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5"
+  }
+}

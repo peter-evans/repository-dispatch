@@ -1,0 +1,13 @@
+name: Create Repository Dispatch
+on: push
+jobs:
+  createRepositoryDispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Repository Dispatch
+        uses: ./
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          event-type: tests
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
