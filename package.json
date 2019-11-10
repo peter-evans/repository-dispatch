@@ -22,6 +22,6 @@
     "@octokit/request": "^5.1.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.20.5"
+    "@zeit/ncc": "0.20.5"
   }
 }
