@@ -51,6 +51,28 @@ jobs:
       - run: echo ${{ github.event.client_payload.sha }}
 ```
 
+## Client payload
+
+The GitHub API allows a maximum of 10 top-level properties in the `client-payload` JSON.
+If you use more than that you will see an error message like the following.
+
+```
+No more than 10 properties are allowed; 14 were supplied.
+```
+
+For example, this payload will fail because it has more than 10 top-level properties.
+
+```yml
+client-payload: ${{ toJson(github) }}
+```
+
+To solve this you can simply wrap the payload in a single top-level property.
+The following payload will succeed.
+
+```yml
+client-payload: '{"github": ${{ toJson(github) }}}'
+```
+
 ## License
 
 [MIT](LICENSE)
