@@ -7,7 +7,7 @@ A GitHub action to create a repository dispatch event.
 
 ```yml
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1.0.0
+        uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           event-type: my-event
@@ -26,7 +26,7 @@ Here is an example setting all of the input parameters.
 
 ```yml
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1.0.0
+        uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: username/my-repo
