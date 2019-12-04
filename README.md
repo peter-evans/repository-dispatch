@@ -42,7 +42,7 @@ on:
   repository_dispatch:
     types: [my-event]
 jobs:
-  autopep8:
+  myEvent:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
