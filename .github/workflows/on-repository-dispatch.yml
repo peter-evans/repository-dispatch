@@ -3,7 +3,7 @@ on:
   repository_dispatch:
     types: [tests]
 jobs:
-  autopep8:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
