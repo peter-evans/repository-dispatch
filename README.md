@@ -35,6 +35,7 @@ Here is an example setting all of the input parameters.
 ```
 
 Here is an example `on: repository_dispatch` workflow to receive the event.
+Note that repository dispatch events will only trigger a workflow run if the workflow is committed to the default branch (usually `master`).
 
 ```yml
 name: Repository Dispatch
