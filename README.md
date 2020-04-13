@@ -18,7 +18,7 @@ A GitHub action to create a repository dispatch event.
 - `token` (**required**) - A `repo` scoped GitHub [Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
 - `repository` - The full name of the repository to send the dispatch. Defaults to the current repository.
 - `event-type` (**required**) - A custom webhook event name.
-- `client-payload` - JSON payload with extra information about the webhook event that your action or worklow may use. Default: {}
+- `client-payload` - JSON payload with extra information about the webhook event that your action or workflow may use. Default: {}
 
 ## Example
 
