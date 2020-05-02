@@ -2,9 +2,11 @@
   "name": "repository-dispatch",
   "version": "1.0.0",
   "description": "Create a repository dispatch event",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "package": "ncc build index.js -o dist"
+    "lint": "eslint src/index.js",
+    "package": "ncc build src/index.js -o dist",
+    "test": "eslint src/index.js && jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,12 @@
   },
   "homepage": "https://github.com/peter-evans/repository-dispatch#readme",
   "dependencies": {
-    "@actions/core": "^1.1.1",
-    "@octokit/request": "^5.1.0"
+    "@actions/core": "1.2.0",
+    "@octokit/request": "5.3.1"
   },
   "devDependencies": {
-    "@zeit/ncc": "0.22.1"
+    "@zeit/ncc": "0.22.1",
+    "eslint": "6.8.0",
+    "jest": "25.5.3"
   }
 }
