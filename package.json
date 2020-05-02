@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/peter-evans/repository-dispatch#readme",
   "dependencies": {
-    "@actions/core": "1.2.0",
+    "@actions/core": "1.2.4",
     "@octokit/request": "5.3.1"
   },
   "devDependencies": {
