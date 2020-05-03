@@ -28,7 +28,7 @@ jobs:
         target: [built, committed]
     steps:
       - uses: actions/checkout@v2
-      - if: matrix.target == 'built'
+      - if: matrix.target == 'built' || github.event_name == 'pull_request'
         uses: actions/download-artifact@v2
         with:
           name: dist
