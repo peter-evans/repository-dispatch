@@ -34,12 +34,18 @@ jobs:
           name: dist
           path: dist
 
-      - name: Repository Dispatch
+      - name: Test repository dispatch
         uses: ./
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           event-type: tests
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+
+      - name: Test repository dispatch (default payload)
+        uses: ./
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          event-type: tests
 
   package:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
