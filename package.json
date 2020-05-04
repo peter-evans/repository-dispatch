@@ -1,18 +1,25 @@
 {
   "name": "repository-dispatch",
   "version": "1.0.0",
+  "private": true,
   "description": "Create a repository dispatch event",
-  "main": "src/index.js",
+  "main": "lib/main.js",
   "scripts": {
-    "lint": "eslint src/index.js",
-    "package": "ncc build src/index.js -o dist",
-    "test": "eslint src/index.js && jest --passWithNoTests"
+    "build": "tsc && ncc build",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/peter-evans/repository-dispatch.git"
   },
-  "keywords": [],
+  "keywords": [
+    "actions",
+    "repository",
+    "dispatch"
+  ],
   "author": "Peter Evans",
   "license": "MIT",
   "bugs": {
@@ -21,11 +28,21 @@
   "homepage": "https://github.com/peter-evans/repository-dispatch#readme",
   "dependencies": {
     "@actions/core": "1.2.4",
-    "@octokit/request": "5.4.2"
+    "@actions/github": "2.1.1"
   },
   "devDependencies": {
-    "@zeit/ncc": "0.22.1",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.13.4",
+    "@typescript-eslint/parser": "2.30.0",
+    "@zeit/ncc": "0.20.5",
     "eslint": "6.8.0",
-    "jest": "25.5.4"
+    "eslint-plugin-github": "3.4.1",
+    "eslint-plugin-jest": "23.8.2",
+    "jest": "25.5.4",
+    "jest-circus": "25.5.4",
+    "js-yaml": "3.13.1",
+    "prettier": "2.0.5",
+    "ts-jest": "25.4.0",
+    "typescript": "3.8.3"
   }
 }
