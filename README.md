@@ -13,12 +13,14 @@ A GitHub action to create a repository dispatch event.
           event-type: my-event
 ```
 
-## Parameters
+### Action inputs
 
-- `token` (**required**) - A `repo` scoped GitHub [Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
-- `repository` - The full name of the repository to send the dispatch. Defaults to the current repository.
-- `event-type` (**required**) - A custom webhook event name.
-- `client-payload` - JSON payload with extra information about the webhook event that your action or workflow may use. Default: {}
+| Name | Description | Default |
+| --- | --- | --- |
+| `token` | (**required**) A `repo` scoped GitHub [Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line). | |
+| `repository` | The full name of the repository to send the dispatch. | `github.repository` (current repository) |
+| `event-type` | (**required**) A custom webhook event name. | |
+| `client-payload` | JSON payload with extra information about the webhook event that your action or workflow may use. | `{}` |
 
 ## Example
 

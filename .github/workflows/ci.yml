@@ -13,8 +13,10 @@ jobs:
         with:
           node-version: 12.x
       - run: npm ci
+      - run: npm run build
+      - run: npm run format-check
+      - run: npm run lint
       - run: npm run test
-      - run: npm run package
       - uses: actions/upload-artifact@v2
         with:
           name: dist
@@ -34,12 +36,18 @@ jobs:
           name: dist
           path: dist
 
-      - name: Repository Dispatch
+      - name: Test repository dispatch
         uses: ./
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           event-type: tests
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+
+      - name: Test repository dispatch (default payload)
+        uses: ./
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          event-type: tests
 
   package:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
