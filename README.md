@@ -55,6 +55,30 @@ jobs:
       - run: echo ${{ github.event.client_payload.sha }}
 ```
 
+### Dispatch to multiple repositories
+
+You can dispatch to multiple repositories by using a [matrix strategy](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategy). In the following example, after the `build` job succeeds, an event is dispatched to three different repositories.
+
+```yml
+jobs:
+  build:
+    # Main workflow job that builds, tests, etc.
+
+  dispatch:
+    needs: build
+    strategy:
+      matrix:
+        repo: ['my-org/repo1', 'my-org/repo2', 'my-org/repo3']
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: ${{ matrix.repo }}
+          event-type: my-event
+```
+
 ## Client payload
 
 The GitHub API allows a maximum of 10 top-level properties in the `client-payload` JSON.
