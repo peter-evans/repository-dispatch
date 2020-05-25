@@ -1,0 +1,22 @@
+name: Slash Command Dispatch
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  slashCommandDispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slash Command Dispatch
+        uses: peter-evans/slash-command-dispatch@v1
+        with:
+          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
+          reaction-token: ${{ secrets.GITHUB_TOKEN }}
+          config: >
+            [
+              {
+                "command": "rebase",
+                "permission": "admin",
+                "repository": "peter-evans/slash-command-dispatch-processor",
+                "issue_type": "pull-request"
+              }
+            ]
