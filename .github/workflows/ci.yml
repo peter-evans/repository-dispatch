@@ -27,6 +27,10 @@ jobs:
         with:
           name: dist
           path: dist
+      - uses: actions/upload-artifact@v2
+        with:
+          name: action.yml
+          path: action.yml
 
   test:
     if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
@@ -42,6 +46,11 @@ jobs:
         with:
           name: dist
           path: dist
+      - if: matrix.target == 'built' || github.event_name == 'pull_request'
+        uses: actions/download-artifact@v2
+        with:
+          name: action.yml
+          path: .
 
       - name: Test repository dispatch
         uses: ./
