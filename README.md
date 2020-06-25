@@ -26,9 +26,8 @@ A GitHub action to create a repository dispatch event.
 #### `token`
 
 This action creates [`repository_dispatch`](https://developer.github.com/v3/repos/#create-a-repository-dispatch-event) events.
-The default `GITHUB_TOKEN` does not have scopes to do this so a `repo` scoped [PAT](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) is required.
-
-If you will be dispatching to a public repository then you can use the more limited `public_repo` scope. Additionally, the user for which the PAT is created needs to have `write` access to the repository.
+The default `GITHUB_TOKEN` does not have scopes to do this so a `repo` scoped [PAT](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) created on a user with `write` access to the target repository is required.
+If you will be dispatching to a public repository then you can use the more limited `public_repo` scope.
 
 ## Example
 
