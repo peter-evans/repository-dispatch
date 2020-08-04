@@ -18,7 +18,7 @@ A GitHub action to create a repository dispatch event.
 
 | Name | Description | Default |
 | --- | --- | --- |
-| `token` | (**required**) A `repo` scoped GitHub [Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line). See [token](#token) for further details. | |
+| `token` | (**required**) A `repo` scoped GitHub [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). See [token](#token) for further details. | |
 | `repository` | The full name of the repository to send the dispatch. | `github.repository` (current repository) |
 | `event-type` | (**required**) A custom webhook event name. | |
 | `client-payload` | JSON payload with extra information about the webhook event that your action or workflow may use. | `{}` |
@@ -26,7 +26,7 @@ A GitHub action to create a repository dispatch event.
 #### `token`
 
 This action creates [`repository_dispatch`](https://developer.github.com/v3/repos/#create-a-repository-dispatch-event) events.
-The default `GITHUB_TOKEN` does not have scopes to do this so a `repo` scoped [PAT](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) created on a user with `write` access to the target repository is required.
+The default `GITHUB_TOKEN` does not have scopes to do this so a `repo` scoped [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) created on a user with `write` access to the target repository is required.
 If you will be dispatching to a public repository then you can use the more limited `public_repo` scope.
 
 ## Example
@@ -63,7 +63,7 @@ jobs:
 
 ### Dispatch to multiple repositories
 
-You can dispatch to multiple repositories by using a [matrix strategy](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategy). In the following example, after the `build` job succeeds, an event is dispatched to three different repositories.
+You can dispatch to multiple repositories by using a [matrix strategy](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix). In the following example, after the `build` job succeeds, an event is dispatched to three different repositories.
 
 ```yml
 jobs:
