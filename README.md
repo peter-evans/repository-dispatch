@@ -107,10 +107,7 @@ The following payload will succeed.
 client-payload: '{"github": ${{ toJson(github) }}}'
 ```
 
-Additionally there is a limitation regarding the maximum length of strings, you are allowed to pass within `client-payload`.
-This might get into your way when you e.g. try to pass a Pull Request body.
-In this cases you might consider truncating the overlong strings, because otherwise your action will be interrupted with a `client_payload is too large` error.
-
+Additionally, there is a limitation on the total data size of the `client-payload`. A very large payload may result in a `client_payload is too large` error.
 ## License
 
 [MIT](LICENSE)
