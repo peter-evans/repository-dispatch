@@ -108,6 +108,7 @@ client-payload: '{"github": ${{ toJson(github) }}}'
 ```
 
 Additionally, there is a limitation on the total data size of the `client-payload`. A very large payload may result in a `client_payload is too large` error.
+
 ## License
 
 [MIT](LICENSE)
