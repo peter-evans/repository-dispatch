@@ -60,7 +60,12 @@ function run() {
         }
         catch (error) {
             core.debug(util_1.inspect(error));
-            core.setFailed(error.message);
+            if (error.status == 404) {
+                core.setFailed('Repository not found, OR token has insufficient permissions.');
+            }
+            else {
+                core.setFailed(error.message);
+            }
         }
     });
 }

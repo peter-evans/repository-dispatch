@@ -24,7 +24,13 @@ async function run(): Promise<void> {
     })
   } catch (error) {
     core.debug(inspect(error))
-    core.setFailed(error.message)
+    if (error.status == 404) {
+      core.setFailed(
+        'Repository not found, OR token has insufficient permissions.'
+      )
+    } else {
+      core.setFailed(error.message)
+    }
   }
 }
 
