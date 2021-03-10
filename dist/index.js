@@ -39,24 +39,49 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core = __importStar(__nccwpck_require__(2186));
 const github = __importStar(__nccwpck_require__(5438));
 const util_1 = __nccwpck_require__(1669);
+const orgOwner = github.context.repo.owner;
+function splitRepoString(repoStr) {
+    const [owner, repo] = repoStr.split('/');
+    if (repo) {
+        return {
+            owner: owner,
+            repo: repo
+        };
+    }
+    return {
+        owner: orgOwner,
+        repo: owner
+    };
+}
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const inputs = {
                 token: core.getInput('token'),
                 repository: core.getInput('repository'),
+                repositories: core.getInput('repositories'),
                 eventType: core.getInput('event-type'),
                 clientPayload: core.getInput('client-payload')
             };
             core.debug(`Inputs: ${util_1.inspect(inputs)}`);
-            const [owner, repo] = inputs.repository.split('/');
+            const repositories = [];
+            if (inputs.repositories) {
+                repositories.push(...inputs.repositories
+                    .replace(/\r/g, '')
+                    .split('\n')
+                    .map(input => splitRepoString(input)));
+            }
+            else if (inputs.repository) {
+                const repo = splitRepoString(inputs.repository);
+                repositories.push(repo);
+            }
+            else {
+                repositories.push(github.context.repo);
+            }
             const octokit = github.getOctokit(inputs.token);
-            yield octokit.repos.createDispatchEvent({
-                owner: owner,
-                repo: repo,
-                event_type: inputs.eventType,
-                client_payload: JSON.parse(inputs.clientPayload)
-            });
+            yield Promise.all(repositories.map((repo) => __awaiter(this, void 0, void 0, function* () {
+                yield octokit.repos.createDispatchEvent(Object.assign(Object.assign({}, repo), { event_type: inputs.eventType, client_payload: JSON.parse(inputs.clientPayload) }));
+            })));
         }
         catch (error) {
             core.debug(util_1.inspect(error));
