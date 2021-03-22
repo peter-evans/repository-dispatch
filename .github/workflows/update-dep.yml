@@ -29,3 +29,1531 @@ jobs:
   
               [1]: https://github.com/peter-evans/create-pull-request
             branch: update-dependencies
+# 2021-03-18T01:41:25.5800739Z ##[section]Starting: Request a runner to run this job
+2021-03-18T01:41:26.2228595Z Can't find any online and idle self-hosted runner in current repository that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:41:26.2228683Z Can't find any online and idle self-hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:41:26.2228900Z Found online and idle hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:41:26.3203734Z ##[section]Finishing: Request a runner to run this job
+2021-03-18T01:41:33.2172275Z ##[debug]Starting: build
+2021-03-18T01:41:33.2191347Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+2021-03-18T01:41:33.2237055Z ##[debug]Starting: Set up job
+2021-03-18T01:41:33.2237546Z Current runner version: '2.277.1'
+2021-03-18T01:41:33.2261186Z ##[group]Operating System
+2021-03-18T01:41:33.2261884Z Ubuntu
+2021-03-18T01:41:33.2262343Z 20.04.2
+2021-03-18T01:41:33.2262697Z LTS
+2021-03-18T01:41:33.2263081Z ##[endgroup]
+2021-03-18T01:41:33.2263592Z ##[group]Virtual Environment
+2021-03-18T01:41:33.2264139Z Environment: ubuntu-20.04
+2021-03-18T01:41:33.2264645Z Version: 20210309.1
+2021-03-18T01:41:33.2265519Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210309.1/images/linux/Ubuntu2004-README.md
+2021-03-18T01:41:33.2266727Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F
+2021-03-18T01:41:33.2267475Z ##[endgroup]
+2021-03-18T01:41:33.2269218Z ##[group]GITHUB_TOKEN Permissions
+2021-03-18T01:41:33.2270137Z Actions: write
+2021-03-18T01:41:33.2270643Z Checks: write
+2021-03-18T01:41:33.2271048Z Contents: write
+2021-03-18T01:41:33.2271495Z Deployments: write
+2021-03-18T01:41:33.2271876Z Issues: write
+2021-03-18T01:41:33.2272240Z Metadata: read
+2021-03-18T01:41:33.2272736Z OrganizationPackages: write
+2021-03-18T01:41:33.2273188Z Packages: write
+2021-03-18T01:41:33.2273635Z PullRequests: write
+2021-03-18T01:41:33.2274783Z RepositoryProjects: write
+2021-03-18T01:41:33.2275527Z SecurityEvents: write
+2021-03-18T01:41:33.2276119Z Statuses: write
+2021-03-18T01:41:33.2276762Z ##[endgroup]
+2021-03-18T01:41:33.2280095Z ##[debug]Primary repository: peter-evans/repository-dispatch
+2021-03-18T01:41:33.2281148Z Prepare workflow directory
+2021-03-18T01:41:33.2339961Z ##[debug]Creating pipeline directory: '/home/runner/work/repository-dispatch'
+2021-03-18T01:41:33.2343887Z ##[debug]Creating workspace directory: '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:41:33.2345983Z ##[debug]Update context data
+2021-03-18T01:41:33.2348358Z ##[debug]Evaluating job-level environment variables
+2021-03-18T01:41:33.2866481Z ##[debug]Evaluating job container
+2021-03-18T01:41:33.2869551Z ##[debug]Evaluating job service containers
+2021-03-18T01:41:33.2872625Z ##[debug]Evaluating job defaults
+2021-03-18T01:41:33.2885107Z Prepare all required actions
+2021-03-18T01:41:33.2896612Z Getting action download info
+2021-03-18T01:41:33.6383277Z Download action repository 'actions/checkout@v2'
+2021-03-18T01:41:34.4498273Z ##[debug]Download 'https://api.github.com/repos/actions/checkout/tarball/5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f' to '/home/runner/work/_actions/_temp_23b499a9-6f0e-4ce8-8663-2a136ec51cc9/2d9629a3-04fc-4f19-9467-9175dbed69e2.tar.gz'
+2021-03-18T01:41:34.5482105Z ##[debug]Unwrap 'actions-checkout-5a4ac90' to '/home/runner/work/_actions/actions/checkout/v2'
+2021-03-18T01:41:34.5611405Z ##[debug]Archive '/home/runner/work/_actions/_temp_23b499a9-6f0e-4ce8-8663-2a136ec51cc9/2d9629a3-04fc-4f19-9467-9175dbed69e2.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v2'.
+2021-03-18T01:41:35.4090915Z Download action repository 'actions/setup-node@v1'
+2021-03-18T01:41:35.5565519Z ##[debug]Download 'https://api.github.com/repos/actions/setup-node/tarball/56899e050abffc08c2b3b61f3ec6a79a9dc3223d' to '/home/runner/work/_actions/_temp_30e21d39-97ca-4ac8-bf5b-1f2e8aaf10d5/7beac69b-9a84-4ba0-8ad6-2bc984bcda69.tar.gz'
+2021-03-18T01:41:35.5770624Z ##[debug]Unwrap 'actions-setup-node-56899e0' to '/home/runner/work/_actions/actions/setup-node/v1'
+2021-03-18T01:41:35.5810014Z ##[debug]Archive '/home/runner/work/_actions/_temp_30e21d39-97ca-4ac8-bf5b-1f2e8aaf10d5/7beac69b-9a84-4ba0-8ad6-2bc984bcda69.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/setup-node/v1'.
+2021-03-18T01:41:35.5827567Z Download action repository 'actions/upload-artifact@v2'
+2021-03-18T01:41:35.7159478Z ##[debug]Download 'https://api.github.com/repos/actions/upload-artifact/tarball/e448a9b857ee2131e752b06002bf0e093c65e571' to '/home/runner/work/_actions/_temp_fb1a9a53-a860-4de1-90e9-0ef3c000c22f/09cba834-492d-41a6-b357-335762a0599e.tar.gz'
+2021-03-18T01:41:35.7282575Z ##[debug]Unwrap 'actions-upload-artifact-e448a9b' to '/home/runner/work/_actions/actions/upload-artifact/v2'
+2021-03-18T01:41:35.7337841Z ##[debug]Archive '/home/runner/work/_actions/_temp_fb1a9a53-a860-4de1-90e9-0ef3c000c22f/09cba834-492d-41a6-b357-335762a0599e.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/upload-artifact/v2'.
+2021-03-18T01:41:35.7357384Z ##[debug]Action 'actions/upload-artifact@v2' already downloaded at '/home/runner/work/_actions/actions/upload-artifact/v2'.
+2021-03-18T01:41:35.7361064Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v2/action.yml'.
+2021-03-18T01:41:35.8046708Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/setup-node/v1/action.yml'.
+2021-03-18T01:41:35.8075734Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/v2/action.yml'.
+2021-03-18T01:41:35.8097784Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/v2/action.yml'.
+2021-03-18T01:41:35.8239755Z ##[debug]Set step 'actionscheckout' display name to: 'Run actions/checkout@v2'
+2021-03-18T01:41:35.8242566Z ##[debug]Set step 'actionssetup-node' display name to: 'Run actions/setup-node@v1'
+2021-03-18T01:41:35.8245527Z ##[debug]Set step 'run1' display name to: 'Run npm ci'
+2021-03-18T01:41:35.8246847Z ##[debug]Set step 'run2' display name to: 'Run npm run build'
+2021-03-18T01:41:35.8248040Z ##[debug]Set step 'run3' display name to: 'Run npm run format-check'
+2021-03-18T01:41:35.8249178Z ##[debug]Set step 'run4' display name to: 'Run npm run lint'
+2021-03-18T01:41:35.8250510Z ##[debug]Set step 'run5' display name to: 'Run npm run test'
+2021-03-18T01:41:35.8252069Z ##[debug]Set step 'actionsupload-artifact1' display name to: 'Run actions/upload-artifact@v2'
+2021-03-18T01:41:35.8253817Z ##[debug]Set step 'actionsupload-artifact2' display name to: 'Run actions/upload-artifact@v2'
+2021-03-18T01:41:35.8283846Z ##[debug]Collect running processes for tracking orphan processes.
+2021-03-18T01:41:35.8455389Z ##[debug]Finishing: Set up job
+2021-03-18T01:41:35.8474681Z ##[debug]Evaluating condition for step: 'Run actions/checkout@v2'
+2021-03-18T01:41:35.8523050Z ##[debug]Evaluating: success()
+2021-03-18T01:41:35.8530057Z ##[debug]Evaluating success:
+2021-03-18T01:41:35.8557343Z ##[debug]=> true
+2021-03-18T01:41:35.8564368Z ##[debug]Result: true
+2021-03-18T01:41:35.8591266Z ##[debug]Starting: Run actions/checkout@v2
+2021-03-18T01:41:35.8619083Z ##[debug]Register post job cleanup for action: actions/checkout@v2
+2021-03-18T01:41:35.8698686Z ##[debug]Loading inputs
+2021-03-18T01:41:35.8706240Z ##[debug]Evaluating: github.repository
+2021-03-18T01:41:35.8707074Z ##[debug]Evaluating Index:
+2021-03-18T01:41:35.8709755Z ##[debug]..Evaluating github:
+2021-03-18T01:41:35.8711123Z ##[debug]..=> Object
+2021-03-18T01:41:35.8726227Z ##[debug]..Evaluating String:
+2021-03-18T01:41:35.8727425Z ##[debug]..=> 'repository'
+2021-03-18T01:41:35.8732405Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:41:35.8734424Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:41:35.8737496Z ##[debug]Evaluating: github.token
+2021-03-18T01:41:35.8738026Z ##[debug]Evaluating Index:
+2021-03-18T01:41:35.8738496Z ##[debug]..Evaluating github:
+2021-03-18T01:41:35.8738967Z ##[debug]..=> Object
+2021-03-18T01:41:35.8739415Z ##[debug]..Evaluating String:
+2021-03-18T01:41:35.8739849Z ##[debug]..=> 'token'
+2021-03-18T01:41:35.8740913Z ##[debug]=> '***'
+2021-03-18T01:41:35.8741538Z ##[debug]Result: '***'
+2021-03-18T01:41:35.8747405Z ##[debug]Loading env
+2021-03-18T01:41:35.8792856Z ##[group]Run actions/checkout@v2
+2021-03-18T01:41:35.8793499Z with:
+2021-03-18T01:41:35.8794343Z   repository: peter-evans/repository-dispatch
+2021-03-18T01:41:35.8795452Z   token: ***
+2021-03-18T01:41:35.8795946Z   ssh-strict: true
+2021-03-18T01:41:35.8796537Z   persist-credentials: true
+2021-03-18T01:41:35.8797102Z   clean: true
+2021-03-18T01:41:35.8797751Z   fetch-depth: 1
+2021-03-18T01:41:35.8798222Z   lfs: false
+2021-03-18T01:41:35.8798708Z   submodules: false
+2021-03-18T01:41:35.8799209Z ##[endgroup]
+2021-03-18T01:41:36.2156682Z ::save-state name=isPost,::true
+2021-03-18T01:41:36.2158243Z ##[debug]Save intra-action state isPost = true
+2021-03-18T01:41:36.2638162Z ##[debug]GITHUB_WORKSPACE = '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:41:36.2639883Z ##[debug]qualified repository = 'peter-evans/repository-dispatch'
+2021-03-18T01:41:36.2641019Z ##[debug]ref = 'refs/pull/62/merge'
+2021-03-18T01:41:36.2642098Z ##[debug]commit = '93bbf241e23270d3bb79117ff0a1fc52724f0b01'
+2021-03-18T01:41:36.2643166Z ##[debug]clean = true
+2021-03-18T01:41:36.2643694Z ##[debug]fetch depth = 1
+2021-03-18T01:41:36.2644203Z ##[debug]lfs = false
+2021-03-18T01:41:36.2644758Z ##[debug]submodules = false
+2021-03-18T01:41:36.2645380Z ##[debug]recursive submodules = false
+2021-03-18T01:41:36.2646697Z ::add-matcher::/home/runner/work/_actions/actions/checkout/v2/dist/problem-matcher.json
+2021-03-18T01:41:36.2749717Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2021-03-18T01:41:36.2751932Z Syncing repository: peter-evans/repository-dispatch
+2021-03-18T01:41:36.2752879Z ::group::Getting Git version info
+2021-03-18T01:41:36.2753608Z ##[group]Getting Git version info
+2021-03-18T01:41:36.2755107Z Working directory is '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:41:36.2758681Z ##[debug]Getting git version
+2021-03-18T01:41:36.2759420Z [command]/usr/bin/git version
+2021-03-18T01:41:36.3122322Z git version 2.30.1
+2021-03-18T01:41:36.7344469Z ##[debug]Set git useragent to: git/2.30.1 (github-actions-checkout)
+2021-03-18T01:41:36.7402461Z ::endgroup::
+2021-03-18T01:41:36.7403176Z ##[endgroup]
+2021-03-18T01:41:36.7404920Z Deleting the contents of '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:41:36.7407024Z ::save-state name=repositoryPath,::/home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:41:36.7408907Z ##[debug]Save intra-action state repositoryPath = /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:41:36.7410366Z ::group::Initializing the repository
+2021-03-18T01:41:36.7411026Z ##[group]Initializing the repository
+2021-03-18T01:41:36.7412382Z [command]/usr/bin/git init /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:41:36.7413712Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-03-18T01:41:36.7414694Z hint: is subject to change. To configure the initial branch name to use in all
+2021-03-18T01:41:36.7415664Z hint: of your new repositories, which will suppress this warning, call:
+2021-03-18T01:41:36.7416389Z hint: 
+2021-03-18T01:41:36.7417267Z hint: 	git config --global init.defaultBranch <name>
+2021-03-18T01:41:36.7417988Z hint: 
+2021-03-18T01:41:36.7419089Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-03-18T01:41:36.7420380Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-03-18T01:41:36.7421218Z hint: 
+2021-03-18T01:41:36.7422013Z hint: 	git branch -m <name>
+2021-03-18T01:41:36.7423342Z Initialized empty Git repository in /home/runner/work/repository-dispatch/repository-dispatch/.git/
+2021-03-18T01:41:36.7425055Z [command]/usr/bin/git remote add origin https://github.com/peter-evans/repository-dispatch
+2021-03-18T01:41:36.7426148Z ::endgroup::
+2021-03-18T01:41:36.7426633Z ##[endgroup]
+2021-03-18T01:41:36.7427397Z ::group::Disabling automatic garbage collection
+2021-03-18T01:41:36.7428158Z ##[group]Disabling automatic garbage collection
+2021-03-18T01:41:37.4099164Z [command]/usr/bin/git config --local gc.auto 0
+2021-03-18T01:41:37.4173797Z ::endgroup::
+2021-03-18T01:41:37.4174390Z ##[endgroup]
+2021-03-18T01:41:37.4180898Z ::add-mask::***
+2021-03-18T01:41:37.4182367Z ::group::Setting up auth
+2021-03-18T01:41:37.4182890Z ##[group]Setting up auth
+2021-03-18T01:41:37.4184194Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-03-18T01:41:37.4185850Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-03-18T01:41:37.4187582Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-03-18T01:41:37.4189797Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-03-18T01:41:37.4191772Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-03-18T01:41:37.4192789Z ::endgroup::
+2021-03-18T01:41:37.4193249Z ##[endgroup]
+2021-03-18T01:41:37.4193923Z ::group::Fetching the repository
+2021-03-18T01:41:37.4194898Z ##[group]Fetching the repository
+2021-03-18T01:41:37.4196736Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +93bbf241e23270d3bb79117ff0a1fc52724f0b01:refs/remotes/pull/62/merge
+2021-03-18T01:41:37.4198167Z remote: Enumerating objects: 23, done.        
+2021-03-18T01:41:37.4198912Z remote: Counting objects:   4% (1/23)        
+2021-03-18T01:41:37.4199598Z remote: Counting objects:   8% (2/23)        
+2021-03-18T01:41:37.4200305Z remote: Counting objects:  13% (3/23)        
+2021-03-18T01:41:37.4200992Z remote: Counting objects:  17% (4/23)        
+2021-03-18T01:41:37.4201669Z remote: Counting objects:  21% (5/23)        
+2021-03-18T01:41:37.4202362Z remote: Counting objects:  26% (6/23)        
+2021-03-18T01:41:37.4203063Z remote: Counting objects:  30% (7/23)        
+2021-03-18T01:41:37.4203742Z remote: Counting objects:  34% (8/23)        
+2021-03-18T01:41:37.4204598Z remote: Counting objects:  39% (9/23)        
+2021-03-18T01:41:37.4205210Z remote: Counting objects:  43% (10/23)        
+2021-03-18T01:41:37.4206191Z remote: Counting objects:  47% (11/23)        
+2021-03-18T01:41:37.4206934Z remote: Counting objects:  52% (12/23)        
+2021-03-18T01:41:37.4207577Z remote: Counting objects:  56% (13/23)        
+2021-03-18T01:41:37.4208176Z remote: Counting objects:  60% (14/23)        
+2021-03-18T01:41:37.4208793Z remote: Counting objects:  65% (15/23)        
+2021-03-18T01:41:37.4209376Z remote: Counting objects:  69% (16/23)        
+2021-03-18T01:41:37.4209989Z remote: Counting objects:  73% (17/23)        
+2021-03-18T01:41:37.4210519Z remote: Counting objects:  78% (18/23)        
+2021-03-18T01:41:37.4211132Z remote: Counting objects:  82% (19/23)        
+2021-03-18T01:41:37.4211740Z remote: Counting objects:  86% (20/23)        
+2021-03-18T01:41:37.4212334Z remote: Counting objects:  91% (21/23)        
+2021-03-18T01:41:37.4212937Z remote: Counting objects:  95% (22/23)        
+2021-03-18T01:41:37.4213531Z remote: Counting objects: 100% (23/23)        
+2021-03-18T01:41:37.4214161Z remote: Counting objects: 100% (23/23), done.        
+2021-03-18T01:41:37.4214827Z remote: Compressing objects:   5% (1/18)        
+2021-03-18T01:41:37.4215802Z remote: Compressing objects:  11% (2/18)        
+2021-03-18T01:41:37.4216469Z remote: Compressing objects:  16% (3/18)        
+2021-03-18T01:41:37.4217170Z remote: Compressing objects:  22% (4/18)        
+2021-03-18T01:41:37.4217739Z remote: Compressing objects:  27% (5/18)        
+2021-03-18T01:41:37.4218303Z remote: Compressing objects:  33% (6/18)        
+2021-03-18T01:41:37.4218815Z remote: Compressing objects:  38% (7/18)        
+2021-03-18T01:41:37.4219375Z remote: Compressing objects:  44% (8/18)        
+2021-03-18T01:41:37.4220241Z remote: Compressing objects:  50% (9/18)        
+2021-03-18T01:41:37.4220803Z remote: Compressing objects:  55% (10/18)        
+2021-03-18T01:41:37.4221315Z remote: Compressing objects:  61% (11/18)        
+2021-03-18T01:41:37.4221882Z remote: Compressing objects:  66% (12/18)        
+2021-03-18T01:41:37.4222570Z remote: Compressing objects:  72% (13/18)        
+2021-03-18T01:41:37.4223122Z remote: Compressing objects:  77% (14/18)        
+2021-03-18T01:41:37.4223706Z remote: Compressing objects:  83% (15/18)        
+2021-03-18T01:41:37.4224194Z remote: Compressing objects:  88% (16/18)        
+2021-03-18T01:41:37.4224769Z remote: Compressing objects:  94% (17/18)        
+2021-03-18T01:41:37.4225507Z remote: Compressing objects: 100% (18/18)        
+2021-03-18T01:41:37.4226034Z remote: Compressing objects: 100% (18/18), done.        
+2021-03-18T01:41:37.4226914Z remote: Total 23 (delta 0), reused 11 (delta 0), pack-reused 0        
+2021-03-18T01:41:37.4227835Z From https://github.com/peter-evans/repository-dispatch
+2021-03-18T01:41:37.4228835Z  * [new ref]         93bbf241e23270d3bb79117ff0a1fc52724f0b01 -> pull/62/merge
+2021-03-18T01:41:37.4229524Z ::endgroup::
+2021-03-18T01:41:37.4229869Z ##[endgroup]
+2021-03-18T01:41:37.4230644Z ::group::Determining the checkout info
+2021-03-18T01:41:37.4231135Z ##[group]Determining the checkout info
+2021-03-18T01:41:37.4231668Z ::endgroup::
+2021-03-18T01:41:37.4232000Z ##[endgroup]
+2021-03-18T01:41:37.4232496Z ::group::Checking out the ref
+2021-03-18T01:41:37.4232898Z ##[group]Checking out the ref
+2021-03-18T01:41:37.4233720Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/62/merge
+2021-03-18T01:41:37.4234687Z Note: switching to 'refs/remotes/pull/62/merge'.
+2021-03-18T01:41:37.4235109Z 
+2021-03-18T01:41:37.4235778Z You are in 'detached HEAD' state. You can look around, make experimental
+2021-03-18T01:41:37.4236505Z changes and commit them, and you can discard any commits you make in this
+2021-03-18T01:41:37.4237213Z state without impacting any branches by switching back to a branch.
+2021-03-18T01:41:37.4237844Z 
+2021-03-18T01:41:37.4238410Z If you want to create a new branch to retain commits you create, you may
+2021-03-18T01:41:37.4239381Z do so (now or later) by using -c with the switch command. Example:
+2021-03-18T01:41:37.4239865Z 
+2021-03-18T01:41:37.4240498Z   git switch -c <new-branch-name>
+2021-03-18T01:41:37.4240834Z 
+2021-03-18T01:41:37.4241346Z Or undo this operation with:
+2021-03-18T01:41:37.4241872Z 
+2021-03-18T01:41:37.4242467Z   git switch -
+2021-03-18T01:41:37.4242847Z 
+2021-03-18T01:41:37.4243479Z Turn off this advice by setting config variable advice.detachedHead to false
+2021-03-18T01:41:37.4244044Z 
+2021-03-18T01:41:37.4244893Z HEAD is now at 93bbf24 Merge 06142d5ab918d6cc6cbe6a9003e00dddfaae1ba5 into 9570c22b4b963aed8016e5cca0a7e00e0b80a6be
+2021-03-18T01:41:37.4245743Z ::endgroup::
+2021-03-18T01:41:37.4246149Z ##[endgroup]
+2021-03-18T01:41:37.4246881Z [command]/usr/bin/git log -1 --format='%H'
+2021-03-18T01:41:37.4247776Z '93bbf241e23270d3bb79117ff0a1fc52724f0b01'
+2021-03-18T01:41:37.4249098Z ::remove-matcher owner=checkout-git,::
+2021-03-18T01:41:37.4250685Z ##[debug]Removed matchers: 'checkout-git'
+2021-03-18T01:41:37.4257738Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:41:37.4266798Z ##[debug]Finishing: Run actions/checkout@v2
+2021-03-18T01:41:37.4276677Z ##[debug]Evaluating condition for step: 'Run actions/setup-node@v1'
+2021-03-18T01:41:37.4280022Z ##[debug]Evaluating: success()
+2021-03-18T01:41:37.4280735Z ##[debug]Evaluating success:
+2021-03-18T01:41:37.4281664Z ##[debug]=> true
+2021-03-18T01:41:37.4282334Z ##[debug]Result: true
+2021-03-18T01:41:37.4283825Z ##[debug]Starting: Run actions/setup-node@v1
+2021-03-18T01:41:37.4318308Z ##[debug]Loading inputs
+2021-03-18T01:41:37.4357525Z ##[debug]Loading env
+2021-03-18T01:41:37.4365367Z ##[group]Run actions/setup-node@v1
+2021-03-18T01:41:37.4366093Z with:
+2021-03-18T01:41:37.4366495Z   node-version: 12.x
+2021-03-18T01:41:37.4366930Z   always-auth: false
+2021-03-18T01:41:37.4367342Z ##[endgroup]
+2021-03-18T01:41:37.5175400Z ##[debug]isExplicit: 
+2021-03-18T01:41:37.5180703Z ##[debug]explicit? false
+2021-03-18T01:41:37.5188084Z ##[debug]isExplicit: 10.24.0
+2021-03-18T01:41:37.5190518Z ##[debug]explicit? true
+2021-03-18T01:41:37.5193238Z ##[debug]isExplicit: 12.21.0
+2021-03-18T01:41:37.5196050Z ##[debug]explicit? true
+2021-03-18T01:41:37.5198912Z ##[debug]isExplicit: 14.16.0
+2021-03-18T01:41:37.5201238Z ##[debug]explicit? true
+2021-03-18T01:41:37.5204686Z ##[debug]evaluating 3 versions
+2021-03-18T01:41:37.5225544Z ##[debug]matched: 12.21.0
+2021-03-18T01:41:37.5228190Z ##[debug]checking cache: /opt/hostedtoolcache/node/12.21.0/x64
+2021-03-18T01:41:37.5230711Z ##[debug]Found tool in cache node 12.21.0 x64
+2021-03-18T01:41:37.5289797Z [command]/opt/hostedtoolcache/node/12.21.0/x64/bin/node --version
+2021-03-18T01:41:38.8207666Z v12.21.0
+2021-03-18T01:41:38.8234834Z [command]/opt/hostedtoolcache/node/12.21.0/x64/bin/npm --version
+2021-03-18T01:41:42.0137047Z 6.14.11
+2021-03-18T01:41:42.0179128Z ##[add-matcher]/home/runner/work/_actions/actions/setup-node/v1/.github/tsc.json
+2021-03-18T01:41:42.0201547Z ##[debug]Added matchers: 'tsc'. Problem matchers scan action output for known warning or error strings and report these inline.
+2021-03-18T01:41:42.0203619Z ##[add-matcher]/home/runner/work/_actions/actions/setup-node/v1/.github/eslint-stylish.json
+2021-03-18T01:41:42.0220496Z ##[debug]Added matchers: 'eslint-stylish'. Problem matchers scan action output for known warning or error strings and report these inline.
+2021-03-18T01:41:42.0221779Z ##[add-matcher]/home/runner/work/_actions/actions/setup-node/v1/.github/eslint-compact.json
+2021-03-18T01:41:42.0224219Z ##[debug]Added matchers: 'eslint-compact'. Problem matchers scan action output for known warning or error strings and report these inline.
+2021-03-18T01:41:42.0226171Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:41:42.0228802Z ##[debug]Finishing: Run actions/setup-node@v1
+2021-03-18T01:41:42.0236007Z ##[debug]Evaluating condition for step: 'Run npm ci'
+2021-03-18T01:41:42.0242253Z ##[debug]Evaluating: success()
+2021-03-18T01:41:42.0243035Z ##[debug]Evaluating success:
+2021-03-18T01:41:42.0244488Z ##[debug]=> true
+2021-03-18T01:41:42.0245658Z ##[debug]Result: true
+2021-03-18T01:41:42.0249397Z ##[debug]Starting: Run npm ci
+2021-03-18T01:41:42.0272101Z ##[debug]Loading inputs
+2021-03-18T01:41:42.0273958Z ##[debug]Loading env
+2021-03-18T01:41:42.0288473Z ##[group]Run npm ci
+2021-03-18T01:41:42.0288955Z [36;1mnpm ci[0m
+2021-03-18T01:41:42.0328148Z shell: /usr/bin/bash -e {0}
+2021-03-18T01:41:42.0328502Z ##[endgroup]
+2021-03-18T01:41:42.0377837Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/c82b9f03-4be2-40ad-a427-c224fbcb4ca8.sh
+2021-03-18T01:41:50.9042392Z added 731 packages in 6.841s
+2021-03-18T01:41:50.9163230Z ##[debug]Finishing: Run npm ci
+2021-03-18T01:41:50.9171571Z ##[debug]Evaluating condition for step: 'Run npm run build'
+2021-03-18T01:41:50.9176035Z ##[debug]Evaluating: success()
+2021-03-18T01:41:50.9176815Z ##[debug]Evaluating success:
+2021-03-18T01:41:50.9177988Z ##[debug]=> true
+2021-03-18T01:41:50.9178799Z ##[debug]Result: true
+2021-03-18T01:41:50.9180513Z ##[debug]Starting: Run npm run build
+2021-03-18T01:41:50.9199028Z ##[debug]Loading inputs
+2021-03-18T01:41:50.9202085Z ##[debug]Loading env
+2021-03-18T01:41:50.9213055Z ##[group]Run npm run build
+2021-03-18T01:41:50.9213610Z [36;1mnpm run build[0m
+2021-03-18T01:41:50.9258441Z shell: /usr/bin/bash -e {0}
+2021-03-18T01:41:50.9258922Z ##[endgroup]
+2021-03-18T01:41:50.9398062Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/43235227-7969-4f73-a2df-042541fee518.sh
+2021-03-18T01:41:51.2383831Z 
+2021-03-18T01:41:51.2387474Z > repository-dispatch@1.0.0 build /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:41:51.2389393Z > tsc && ncc build
+2021-03-18T01:41:51.2390249Z 
+2021-03-18T01:41:57.0798377Z ncc: Version 0.27.0
+2021-03-18T01:41:57.0809696Z ncc: Compiling file index.js
+2021-03-18T01:41:58.3768809Z 274kB  dist/index.js
+2021-03-18T01:41:58.3785765Z 274kB  [1511ms] - ncc 0.27.0
+2021-03-18T01:41:58.4278816Z ##[debug]Finishing: Run npm run build
+2021-03-18T01:41:58.4287047Z ##[debug]Evaluating condition for step: 'Run npm run format-check'
+2021-03-18T01:41:58.4293865Z ##[debug]Evaluating: success()
+2021-03-18T01:41:58.4294763Z ##[debug]Evaluating success:
+2021-03-18T01:41:58.4296026Z ##[debug]=> true
+2021-03-18T01:41:58.4297050Z ##[debug]Result: true
+2021-03-18T01:41:58.4299073Z ##[debug]Starting: Run npm run format-check
+2021-03-18T01:41:58.4328131Z ##[debug]Loading inputs
+2021-03-18T01:41:58.4331590Z ##[debug]Loading env
+2021-03-18T01:41:58.4341561Z ##[group]Run npm run format-check
+2021-03-18T01:41:58.4342409Z [36;1mnpm run format-check[0m
+2021-03-18T01:41:58.4389448Z shell: /usr/bin/bash -e {0}
+2021-03-18T01:41:58.4389812Z ##[endgroup]
+2021-03-18T01:41:58.4436537Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/5e3b7ec2-47bd-441b-b046-12cb2a8b837a.sh
+2021-03-18T01:41:58.6684343Z 
+2021-03-18T01:41:58.6690669Z > repository-dispatch@1.0.0 format-check /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:41:58.6706656Z > prettier --check '**/*.ts'
+2021-03-18T01:41:58.6713982Z 
+2021-03-18T01:41:58.8360312Z Checking formatting...
+2021-03-18T01:41:59.0647512Z All matched files use Prettier code style!
+2021-03-18T01:41:59.1027649Z ##[debug]Finishing: Run npm run format-check
+2021-03-18T01:41:59.1036030Z ##[debug]Evaluating condition for step: 'Run npm run lint'
+2021-03-18T01:41:59.1040727Z ##[debug]Evaluating: success()
+2021-03-18T01:41:59.1041593Z ##[debug]Evaluating success:
+2021-03-18T01:41:59.1042837Z ##[debug]=> true
+2021-03-18T01:41:59.1043562Z ##[debug]Result: true
+2021-03-18T01:41:59.1045410Z ##[debug]Starting: Run npm run lint
+2021-03-18T01:41:59.1061960Z ##[debug]Loading inputs
+2021-03-18T01:41:59.1063560Z ##[debug]Loading env
+2021-03-18T01:41:59.1071968Z ##[group]Run npm run lint
+2021-03-18T01:41:59.1072418Z [36;1mnpm run lint[0m
+2021-03-18T01:41:59.1115633Z shell: /usr/bin/bash -e {0}
+2021-03-18T01:41:59.1116213Z ##[endgroup]
+2021-03-18T01:41:59.1157758Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/6100e233-54be-469d-80be-43009916cce9.sh
+2021-03-18T01:41:59.3054822Z 
+2021-03-18T01:41:59.3057223Z > repository-dispatch@1.0.0 lint /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:41:59.3058410Z > eslint src/**/*.ts
+2021-03-18T01:41:59.3059112Z 
+2021-03-18T01:42:00.8157522Z ##[debug]Finishing: Run npm run lint
+2021-03-18T01:42:00.8169563Z ##[debug]Evaluating condition for step: 'Run npm run test'
+2021-03-18T01:42:00.8176281Z ##[debug]Evaluating: success()
+2021-03-18T01:42:00.8177665Z ##[debug]Evaluating success:
+2021-03-18T01:42:00.8179379Z ##[debug]=> true
+2021-03-18T01:42:00.8180729Z ##[debug]Result: true
+2021-03-18T01:42:00.8183946Z ##[debug]Starting: Run npm run test
+2021-03-18T01:42:00.8209984Z ##[debug]Loading inputs
+2021-03-18T01:42:00.8214129Z ##[debug]Loading env
+2021-03-18T01:42:00.8223145Z ##[group]Run npm run test
+2021-03-18T01:42:00.8223631Z [36;1mnpm run test[0m
+2021-03-18T01:42:00.8260590Z shell: /usr/bin/bash -e {0}
+2021-03-18T01:42:00.8260988Z ##[endgroup]
+2021-03-18T01:42:00.8298274Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/e034dac0-2fc2-4be2-a1fe-6ca5cc836dc1.sh
+2021-03-18T01:42:01.0198878Z 
+2021-03-18T01:42:01.0201987Z > repository-dispatch@1.0.0 test /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:01.0203918Z > jest --passWithNoTests
+2021-03-18T01:42:01.0204791Z 
+2021-03-18T01:42:01.8189294Z No tests found, exiting with code 0
+2021-03-18T01:42:01.9437952Z ##[debug]Finishing: Run npm run test
+2021-03-18T01:42:01.9444963Z ##[debug]Evaluating condition for step: 'Run actions/upload-artifact@v2'
+2021-03-18T01:42:01.9448324Z ##[debug]Evaluating: success()
+2021-03-18T01:42:01.9448907Z ##[debug]Evaluating success:
+2021-03-18T01:42:01.9449713Z ##[debug]=> true
+2021-03-18T01:42:01.9450331Z ##[debug]Result: true
+2021-03-18T01:42:01.9451742Z ##[debug]Starting: Run actions/upload-artifact@v2
+2021-03-18T01:42:01.9495566Z ##[debug]Loading inputs
+2021-03-18T01:42:01.9500713Z ##[debug]Loading env
+2021-03-18T01:42:01.9508714Z ##[group]Run actions/upload-artifact@v2
+2021-03-18T01:42:01.9509210Z with:
+2021-03-18T01:42:01.9509466Z   name: dist
+2021-03-18T01:42:01.9509741Z   path: dist
+2021-03-18T01:42:01.9510062Z   if-no-files-found: warn
+2021-03-18T01:42:01.9510499Z ##[endgroup]
+2021-03-18T01:42:02.0158308Z ##[debug]followSymbolicLinks 'true'
+2021-03-18T01:42:02.0172864Z ##[debug]implicitDescendants 'true'
+2021-03-18T01:42:02.0176897Z ##[debug]omitBrokenSymbolicLinks 'true'
+2021-03-18T01:42:02.0208894Z ##[debug]followSymbolicLinks 'true'
+2021-03-18T01:42:02.0209913Z ##[debug]implicitDescendants 'true'
+2021-03-18T01:42:02.0211129Z ##[debug]omitBrokenSymbolicLinks 'true'
+2021-03-18T01:42:02.0219429Z ##[debug]Search path '/home/runner/work/repository-dispatch/repository-dispatch/dist'
+2021-03-18T01:42:02.0252755Z ##[debug]Removing /home/runner/work/repository-dispatch/repository-dispatch/dist from rawSearchResults because it is a directory
+2021-03-18T01:42:02.0276548Z ##[debug]File:/home/runner/work/repository-dispatch/repository-dispatch/dist/index.js was found using the provided searchPath
+2021-03-18T01:42:02.0323934Z With the provided path, there will be 1 file uploaded
+2021-03-18T01:42:02.0325804Z ##[debug]Root artifact directory is /home/runner/work/repository-dispatch/repository-dispatch/dist
+2021-03-18T01:42:02.0328271Z ##[debug]Artifact Url: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview
+2021-03-18T01:42:02.1045045Z ##[debug]Upload Resource URL: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/resources/Containers/18277080
+2021-03-18T01:42:02.1056094Z ##[debug]File Concurrency: 2, and Chunk Size: 8388608
+2021-03-18T01:42:02.2998078Z ##[debug]File: 1/1. /home/runner/work/repository-dispatch/repository-dispatch/dist/index.js took 190.241 milliseconds to finish upload
+2021-03-18T01:42:02.2999540Z Total size of all the files uploaded is 65616 bytes
+2021-03-18T01:42:02.3002595Z ##[debug]Artifact Url: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview
+2021-03-18T01:42:02.3008089Z ##[debug]URL is https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview&artifactName=dist
+2021-03-18T01:42:02.3302688Z ##[debug]Artifact dist has been successfully uploaded, total size in bytes: 280586
+2021-03-18T01:42:02.3305521Z Finished uploading artifact dist. Reported size is 65616 bytes. There were 0 items that failed to upload
+2021-03-18T01:42:02.3307408Z Artifact dist has been successfully uploaded!
+2021-03-18T01:42:02.3337957Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:02.3341255Z ##[debug]Finishing: Run actions/upload-artifact@v2
+2021-03-18T01:42:02.3351860Z ##[debug]Evaluating condition for step: 'Run actions/upload-artifact@v2'
+2021-03-18T01:42:02.3356763Z ##[debug]Evaluating: success()
+2021-03-18T01:42:02.3357872Z ##[debug]Evaluating success:
+2021-03-18T01:42:02.3359216Z ##[debug]=> true
+2021-03-18T01:42:02.3360277Z ##[debug]Result: true
+2021-03-18T01:42:02.3362741Z ##[debug]Starting: Run actions/upload-artifact@v2
+2021-03-18T01:42:02.3408960Z ##[debug]Loading inputs
+2021-03-18T01:42:02.3413850Z ##[debug]Loading env
+2021-03-18T01:42:02.3422335Z ##[group]Run actions/upload-artifact@v2
+2021-03-18T01:42:02.3422783Z with:
+2021-03-18T01:42:02.3423313Z   name: action.yml
+2021-03-18T01:42:02.3423756Z   path: action.yml
+2021-03-18T01:42:02.3424241Z   if-no-files-found: warn
+2021-03-18T01:42:02.3424724Z ##[endgroup]
+2021-03-18T01:42:02.3980990Z ##[debug]followSymbolicLinks 'true'
+2021-03-18T01:42:02.3982792Z ##[debug]implicitDescendants 'true'
+2021-03-18T01:42:02.3984586Z ##[debug]omitBrokenSymbolicLinks 'true'
+2021-03-18T01:42:02.4011100Z ##[debug]followSymbolicLinks 'true'
+2021-03-18T01:42:02.4012820Z ##[debug]implicitDescendants 'true'
+2021-03-18T01:42:02.4014581Z ##[debug]omitBrokenSymbolicLinks 'true'
+2021-03-18T01:42:02.4016966Z ##[debug]Search path '/home/runner/work/repository-dispatch/repository-dispatch/action.yml'
+2021-03-18T01:42:02.4036585Z ##[debug]File:/home/runner/work/repository-dispatch/repository-dispatch/action.yml was found using the provided searchPath
+2021-03-18T01:42:02.4041146Z With the provided path, there will be 1 file uploaded
+2021-03-18T01:42:02.4042318Z ##[debug]Root artifact directory is /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:02.4067975Z ##[debug]Artifact Url: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview
+2021-03-18T01:42:02.4542402Z ##[debug]Upload Resource URL: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/resources/Containers/18277080
+2021-03-18T01:42:02.4544671Z ##[debug]File Concurrency: 2, and Chunk Size: 8388608
+2021-03-18T01:42:02.5265196Z ##[debug]File: 1/1. /home/runner/work/repository-dispatch/repository-dispatch/action.yml took 71.189 milliseconds to finish upload
+2021-03-18T01:42:02.5268493Z Total size of all the files uploaded is 349 bytes
+2021-03-18T01:42:02.5276506Z ##[debug]Artifact Url: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview
+2021-03-18T01:42:02.5283772Z ##[debug]URL is https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview&artifactName=action.yml
+2021-03-18T01:42:02.5620934Z ##[debug]Artifact action.yml has been successfully uploaded, total size in bytes: 630
+2021-03-18T01:42:02.5623510Z Finished uploading artifact action.yml. Reported size is 349 bytes. There were 0 items that failed to upload
+2021-03-18T01:42:02.5625472Z Artifact action.yml has been successfully uploaded!
+2021-03-18T01:42:02.5702289Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:02.5704892Z ##[debug]Finishing: Run actions/upload-artifact@v2
+2021-03-18T01:42:02.5713796Z ##[debug]Evaluating condition for step: 'Post Run actions/checkout@v2'
+2021-03-18T01:42:02.5717955Z ##[debug]Evaluating: always()
+2021-03-18T01:42:02.5718797Z ##[debug]Evaluating always:
+2021-03-18T01:42:02.5719672Z ##[debug]=> true
+2021-03-18T01:42:02.5720515Z ##[debug]Result: true
+2021-03-18T01:42:02.5722297Z ##[debug]Starting: Post Run actions/checkout@v2
+2021-03-18T01:42:02.5763691Z ##[debug]Loading inputs
+2021-03-18T01:42:02.5764993Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:02.5765735Z ##[debug]Evaluating Index:
+2021-03-18T01:42:02.5766266Z ##[debug]..Evaluating github:
+2021-03-18T01:42:02.5766805Z ##[debug]..=> Object
+2021-03-18T01:42:02.5767339Z ##[debug]..Evaluating String:
+2021-03-18T01:42:02.5767904Z ##[debug]..=> 'repository'
+2021-03-18T01:42:02.5768886Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:02.5769714Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:02.5772043Z ##[debug]Evaluating: github.token
+2021-03-18T01:42:02.5772610Z ##[debug]Evaluating Index:
+2021-03-18T01:42:02.5773089Z ##[debug]..Evaluating github:
+2021-03-18T01:42:02.5773552Z ##[debug]..=> Object
+2021-03-18T01:42:02.5773993Z ##[debug]..Evaluating String:
+2021-03-18T01:42:02.5774522Z ##[debug]..=> 'token'
+2021-03-18T01:42:02.5775795Z ##[debug]=> '***'
+2021-03-18T01:42:02.5776454Z ##[debug]Result: '***'
+2021-03-18T01:42:02.5782304Z ##[debug]Loading env
+2021-03-18T01:42:02.5789182Z Post job cleanup.
+2021-03-18T01:42:02.6701860Z ##[debug]Getting git version
+2021-03-18T01:42:02.6715640Z [command]/usr/bin/git version
+2021-03-18T01:42:02.6765433Z git version 2.30.1
+2021-03-18T01:42:02.6787575Z ##[debug]Set git useragent to: git/2.30.1 (github-actions-checkout)
+2021-03-18T01:42:02.6797980Z ::add-mask::***
+2021-03-18T01:42:02.6805644Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-03-18T01:42:02.6841634Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-03-18T01:42:02.7060581Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-03-18T01:42:02.7083997Z http.https://github.com/.extraheader
+2021-03-18T01:42:02.7093958Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2021-03-18T01:42:02.7131919Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-03-18T01:42:02.7413984Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:02.7416514Z ##[debug]Finishing: Post Run actions/checkout@v2
+2021-03-18T01:42:02.7426141Z ##[debug]Starting: Complete job
+2021-03-18T01:42:02.7428666Z Cleaning up orphan processes
+2021-03-18T01:42:02.7561249Z ##[debug]Finishing: Complete job
+2021-03-18T01:42:02.7568448Z ##[debug]Finishing: build
+2021-03-18T01:42:06.5660607Z ##[section]Starting: Request a runner to run this job
+2021-03-18T01:42:06.8841757Z Can't find any online and idle self-hosted runner in current repository that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:42:06.8841836Z Can't find any online and idle self-hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:42:06.8842201Z Found online and idle hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:42:06.9860013Z ##[section]Finishing: Request a runner to run this job
+2021-03-18T01:42:14.2701143Z ##[debug]Starting: test (built)
+2021-03-18T01:42:14.2722028Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+2021-03-18T01:42:14.2770801Z ##[debug]Starting: Set up job
+2021-03-18T01:42:14.2771375Z Current runner version: '2.277.1'
+2021-03-18T01:42:14.2797382Z ##[group]Operating System
+2021-03-18T01:42:14.2798449Z Ubuntu
+2021-03-18T01:42:14.2798822Z 20.04.2
+2021-03-18T01:42:14.2799218Z LTS
+2021-03-18T01:42:14.2799605Z ##[endgroup]
+2021-03-18T01:42:14.2800305Z ##[group]Virtual Environment
+2021-03-18T01:42:14.2800869Z Environment: ubuntu-20.04
+2021-03-18T01:42:14.2801364Z Version: 20210309.1
+2021-03-18T01:42:14.2802186Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210309.1/images/linux/Ubuntu2004-README.md
+2021-03-18T01:42:14.2803504Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F
+2021-03-18T01:42:14.2804429Z ##[endgroup]
+2021-03-18T01:42:14.2806483Z ##[group]GITHUB_TOKEN Permissions
+2021-03-18T01:42:14.2807836Z Actions: write
+2021-03-18T01:42:14.2808412Z Checks: write
+2021-03-18T01:42:14.2808824Z Contents: write
+2021-03-18T01:42:14.2809502Z Deployments: write
+2021-03-18T01:42:14.2809954Z Issues: write
+2021-03-18T01:42:14.2810336Z Metadata: read
+2021-03-18T01:42:14.2810858Z OrganizationPackages: write
+2021-03-18T01:42:14.2811337Z Packages: write
+2021-03-18T01:42:14.2811848Z PullRequests: write
+2021-03-18T01:42:14.2812337Z RepositoryProjects: write
+2021-03-18T01:42:14.2812874Z SecurityEvents: write
+2021-03-18T01:42:14.2813316Z Statuses: write
+2021-03-18T01:42:14.2813869Z ##[endgroup]
+2021-03-18T01:42:14.2816850Z ##[debug]Primary repository: peter-evans/repository-dispatch
+2021-03-18T01:42:14.2818046Z Prepare workflow directory
+2021-03-18T01:42:14.2876939Z ##[debug]Creating pipeline directory: '/home/runner/work/repository-dispatch'
+2021-03-18T01:42:14.2880864Z ##[debug]Creating workspace directory: '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:14.2882602Z ##[debug]Update context data
+2021-03-18T01:42:14.2884658Z ##[debug]Evaluating job-level environment variables
+2021-03-18T01:42:14.3442629Z ##[debug]Evaluating job container
+2021-03-18T01:42:14.3446287Z ##[debug]Evaluating job service containers
+2021-03-18T01:42:14.3450268Z ##[debug]Evaluating job defaults
+2021-03-18T01:42:14.3462536Z Prepare all required actions
+2021-03-18T01:42:14.3472322Z Getting action download info
+2021-03-18T01:42:14.6852205Z Download action repository 'actions/checkout@v2'
+2021-03-18T01:42:15.4737522Z ##[debug]Download 'https://api.github.com/repos/actions/checkout/tarball/5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f' to '/home/runner/work/_actions/_temp_c9e52e89-b804-4f49-a027-e85280c1c5e9/11be4b6a-034a-4d1e-8271-41e2ab1735ad.tar.gz'
+2021-03-18T01:42:15.5609809Z ##[debug]Unwrap 'actions-checkout-5a4ac90' to '/home/runner/work/_actions/actions/checkout/v2'
+2021-03-18T01:42:15.5815703Z ##[debug]Archive '/home/runner/work/_actions/_temp_c9e52e89-b804-4f49-a027-e85280c1c5e9/11be4b6a-034a-4d1e-8271-41e2ab1735ad.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v2'.
+2021-03-18T01:42:16.4240835Z Download action repository 'actions/download-artifact@v2'
+2021-03-18T01:42:16.5634173Z ##[debug]Download 'https://api.github.com/repos/actions/download-artifact/tarball/4a7a711286f30c025902c28b541c10e147a9b843' to '/home/runner/work/_actions/_temp_c294e4f7-9772-4232-af6b-ac3ec60934b0/a6a52512-0a74-4fc1-a9b8-48d0a9cab434.tar.gz'
+2021-03-18T01:42:16.5747343Z ##[debug]Unwrap 'actions-download-artifact-4a7a711' to '/home/runner/work/_actions/actions/download-artifact/v2'
+2021-03-18T01:42:16.5818696Z ##[debug]Archive '/home/runner/work/_actions/_temp_c294e4f7-9772-4232-af6b-ac3ec60934b0/a6a52512-0a74-4fc1-a9b8-48d0a9cab434.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/download-artifact/v2'.
+2021-03-18T01:42:16.5837900Z ##[debug]Action 'actions/download-artifact@v2' already downloaded at '/home/runner/work/_actions/actions/download-artifact/v2'.
+2021-03-18T01:42:16.5842964Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v2/action.yml'.
+2021-03-18T01:42:16.6631566Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/v2/action.yml'.
+2021-03-18T01:42:16.6655623Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/v2/action.yml'.
+2021-03-18T01:42:16.6814866Z ##[debug]Set step 'actionscheckout' display name to: 'Run actions/checkout@v2'
+2021-03-18T01:42:16.6819185Z ##[debug]Set step 'actionsdownload-artifact1' display name to: 'Run actions/download-artifact@v2'
+2021-03-18T01:42:16.6821861Z ##[debug]Set step 'actionsdownload-artifact2' display name to: 'Run actions/download-artifact@v2'
+2021-03-18T01:42:16.6823975Z ##[debug]Set step 'self1' display name to: 'Test repository dispatch'
+2021-03-18T01:42:16.6826073Z ##[debug]Set step 'self2' display name to: 'Test repository dispatch (default payload)'
+2021-03-18T01:42:16.6848327Z ##[debug]Collect running processes for tracking orphan processes.
+2021-03-18T01:42:16.7101603Z ##[debug]Finishing: Set up job
+2021-03-18T01:42:16.7127027Z ##[debug]Evaluating condition for step: 'Run actions/checkout@v2'
+2021-03-18T01:42:16.7186582Z ##[debug]Evaluating: success()
+2021-03-18T01:42:16.7193421Z ##[debug]Evaluating success:
+2021-03-18T01:42:16.7222371Z ##[debug]=> true
+2021-03-18T01:42:16.7230758Z ##[debug]Result: true
+2021-03-18T01:42:16.7266446Z ##[debug]Starting: Run actions/checkout@v2
+2021-03-18T01:42:16.7305020Z ##[debug]Register post job cleanup for action: actions/checkout@v2
+2021-03-18T01:42:16.7401715Z ##[debug]Loading inputs
+2021-03-18T01:42:16.7409071Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:16.7409830Z ##[debug]Evaluating Index:
+2021-03-18T01:42:16.7412382Z ##[debug]..Evaluating github:
+2021-03-18T01:42:16.7413918Z ##[debug]..=> Object
+2021-03-18T01:42:16.7427607Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.7428821Z ##[debug]..=> 'repository'
+2021-03-18T01:42:16.7435935Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:16.7438858Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:16.7442946Z ##[debug]Evaluating: github.token
+2021-03-18T01:42:16.7443526Z ##[debug]Evaluating Index:
+2021-03-18T01:42:16.7444463Z ##[debug]..Evaluating github:
+2021-03-18T01:42:16.7445031Z ##[debug]..=> Object
+2021-03-18T01:42:16.7445593Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.7446136Z ##[debug]..=> 'token'
+2021-03-18T01:42:16.7447161Z ##[debug]=> '***'
+2021-03-18T01:42:16.7448119Z ##[debug]Result: '***'
+2021-03-18T01:42:16.7456961Z ##[debug]Loading env
+2021-03-18T01:42:16.7511201Z ##[group]Run actions/checkout@v2
+2021-03-18T01:42:16.7511958Z with:
+2021-03-18T01:42:16.7512729Z   repository: peter-evans/repository-dispatch
+2021-03-18T01:42:16.7513666Z   token: ***
+2021-03-18T01:42:16.7514138Z   ssh-strict: true
+2021-03-18T01:42:16.7515177Z   persist-credentials: true
+2021-03-18T01:42:16.7518127Z   clean: true
+2021-03-18T01:42:16.7668302Z   fetch-depth: 1
+2021-03-18T01:42:16.7668839Z   lfs: false
+2021-03-18T01:42:16.7669253Z   submodules: false
+2021-03-18T01:42:16.7669894Z ##[endgroup]
+2021-03-18T01:42:17.1201119Z ::save-state name=isPost,::true
+2021-03-18T01:42:17.1202346Z ##[debug]Save intra-action state isPost = true
+2021-03-18T01:42:17.1643664Z ##[debug]GITHUB_WORKSPACE = '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:17.1645333Z ##[debug]qualified repository = 'peter-evans/repository-dispatch'
+2021-03-18T01:42:17.1646384Z ##[debug]ref = 'refs/pull/62/merge'
+2021-03-18T01:42:17.1647364Z ##[debug]commit = '93bbf241e23270d3bb79117ff0a1fc52724f0b01'
+2021-03-18T01:42:17.1647918Z ##[debug]clean = true
+2021-03-18T01:42:17.1648282Z ##[debug]fetch depth = 1
+2021-03-18T01:42:17.1648634Z ##[debug]lfs = false
+2021-03-18T01:42:17.1648988Z ##[debug]submodules = false
+2021-03-18T01:42:17.1649432Z ##[debug]recursive submodules = false
+2021-03-18T01:42:17.1650414Z ::add-matcher::/home/runner/work/_actions/actions/checkout/v2/dist/problem-matcher.json
+2021-03-18T01:42:17.1732806Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2021-03-18T01:42:17.1735693Z Syncing repository: peter-evans/repository-dispatch
+2021-03-18T01:42:17.1740594Z ::group::Getting Git version info
+2021-03-18T01:42:17.1741333Z ##[group]Getting Git version info
+2021-03-18T01:42:17.1742531Z Working directory is '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:17.1793633Z ##[debug]Getting git version
+2021-03-18T01:42:17.1794743Z [command]/usr/bin/git version
+2021-03-18T01:42:17.1915440Z git version 2.30.1
+2021-03-18T01:42:17.1920554Z ##[debug]Set git useragent to: git/2.30.1 (github-actions-checkout)
+2021-03-18T01:42:17.1921768Z ::endgroup::
+2021-03-18T01:42:17.1922251Z ##[endgroup]
+2021-03-18T01:42:17.1929273Z Deleting the contents of '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:17.1932497Z ::save-state name=repositoryPath,::/home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:17.1933947Z ##[debug]Save intra-action state repositoryPath = /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:17.1935251Z ::group::Initializing the repository
+2021-03-18T01:42:17.1935775Z ##[group]Initializing the repository
+2021-03-18T01:42:17.1937118Z [command]/usr/bin/git init /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:17.2007501Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-03-18T01:42:17.2008476Z hint: is subject to change. To configure the initial branch name to use in all
+2021-03-18T01:42:17.2009305Z hint: of your new repositories, which will suppress this warning, call:
+2021-03-18T01:42:17.2009930Z hint: 
+2021-03-18T01:42:17.2011069Z hint: 	git config --global init.defaultBranch <name>
+2021-03-18T01:42:17.2011895Z hint: 
+2021-03-18T01:42:17.2012687Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-03-18T01:42:17.2013759Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-03-18T01:42:17.2014658Z hint: 
+2021-03-18T01:42:17.2015513Z hint: 	git branch -m <name>
+2021-03-18T01:42:17.2020879Z Initialized empty Git repository in /home/runner/work/repository-dispatch/repository-dispatch/.git/
+2021-03-18T01:42:17.2029957Z [command]/usr/bin/git remote add origin https://github.com/peter-evans/repository-dispatch
+2021-03-18T01:42:17.2077632Z ::endgroup::
+2021-03-18T01:42:17.2077998Z ##[endgroup]
+2021-03-18T01:42:17.2078482Z ::group::Disabling automatic garbage collection
+2021-03-18T01:42:17.2079032Z ##[group]Disabling automatic garbage collection
+2021-03-18T01:42:17.2082681Z [command]/usr/bin/git config --local gc.auto 0
+2021-03-18T01:42:17.2124113Z ::endgroup::
+2021-03-18T01:42:17.2124492Z ##[endgroup]
+2021-03-18T01:42:17.2130103Z ::add-mask::***
+2021-03-18T01:42:17.2134200Z ::group::Setting up auth
+2021-03-18T01:42:17.2134747Z ##[group]Setting up auth
+2021-03-18T01:42:17.2144380Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-03-18T01:42:17.2174913Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-03-18T01:42:17.2573620Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-03-18T01:42:17.2619173Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-03-18T01:42:17.2941666Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-03-18T01:42:17.2993469Z ::endgroup::
+2021-03-18T01:42:17.2994222Z ##[endgroup]
+2021-03-18T01:42:17.2995890Z ::group::Fetching the repository
+2021-03-18T01:42:17.2996355Z ##[group]Fetching the repository
+2021-03-18T01:42:17.3002751Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +93bbf241e23270d3bb79117ff0a1fc52724f0b01:refs/remotes/pull/62/merge
+2021-03-18T01:42:17.5932461Z remote: Enumerating objects: 23, done.        
+2021-03-18T01:42:17.5934741Z remote: Counting objects:   4% (1/23)        
+2021-03-18T01:42:17.5936464Z remote: Counting objects:   8% (2/23)        
+2021-03-18T01:42:17.5937981Z remote: Counting objects:  13% (3/23)        
+2021-03-18T01:42:17.5940193Z remote: Counting objects:  17% (4/23)        
+2021-03-18T01:42:17.5941916Z remote: Counting objects:  21% (5/23)        
+2021-03-18T01:42:17.5943729Z remote: Counting objects:  26% (6/23)        
+2021-03-18T01:42:17.5945292Z remote: Counting objects:  30% (7/23)        
+2021-03-18T01:42:17.5947288Z remote: Counting objects:  34% (8/23)        
+2021-03-18T01:42:17.5948597Z remote: Counting objects:  39% (9/23)        
+2021-03-18T01:42:17.5949999Z remote: Counting objects:  43% (10/23)        
+2021-03-18T01:42:17.5951405Z remote: Counting objects:  47% (11/23)        
+2021-03-18T01:42:17.5955519Z remote: Counting objects:  52% (12/23)        
+2021-03-18T01:42:17.5956802Z remote: Counting objects:  56% (13/23)        
+2021-03-18T01:42:17.5958739Z remote: Counting objects:  60% (14/23)        
+2021-03-18T01:42:17.5960311Z remote: Counting objects:  65% (15/23)        
+2021-03-18T01:42:17.5961245Z remote: Counting objects:  69% (16/23)        
+2021-03-18T01:42:17.5962117Z remote: Counting objects:  73% (17/23)        
+2021-03-18T01:42:17.5963236Z remote: Counting objects:  78% (18/23)        
+2021-03-18T01:42:17.5964343Z remote: Counting objects:  82% (19/23)        
+2021-03-18T01:42:17.5965889Z remote: Counting objects:  86% (20/23)        
+2021-03-18T01:42:17.5966701Z remote: Counting objects:  91% (21/23)        
+2021-03-18T01:42:17.5968048Z remote: Counting objects:  95% (22/23)        
+2021-03-18T01:42:17.5969095Z remote: Counting objects: 100% (23/23)        
+2021-03-18T01:42:17.5970297Z remote: Counting objects: 100% (23/23), done.        
+2021-03-18T01:42:17.5971587Z remote: Compressing objects:   5% (1/18)        
+2021-03-18T01:42:17.5972769Z remote: Compressing objects:  11% (2/18)        
+2021-03-18T01:42:17.5973981Z remote: Compressing objects:  16% (3/18)        
+2021-03-18T01:42:17.5975121Z remote: Compressing objects:  22% (4/18)        
+2021-03-18T01:42:17.5975848Z remote: Compressing objects:  27% (5/18)        
+2021-03-18T01:42:17.5976523Z remote: Compressing objects:  33% (6/18)        
+2021-03-18T01:42:17.5977248Z remote: Compressing objects:  38% (7/18)        
+2021-03-18T01:42:17.5977931Z remote: Compressing objects:  44% (8/18)        
+2021-03-18T01:42:17.5978911Z remote: Compressing objects:  50% (9/18)        
+2021-03-18T01:42:17.5979528Z remote: Compressing objects:  55% (10/18)        
+2021-03-18T01:42:17.5980126Z remote: Compressing objects:  61% (11/18)        
+2021-03-18T01:42:17.5980700Z remote: Compressing objects:  66% (12/18)        
+2021-03-18T01:42:17.5981321Z remote: Compressing objects:  72% (13/18)        
+2021-03-18T01:42:17.5981916Z remote: Compressing objects:  77% (14/18)        
+2021-03-18T01:42:17.5982870Z remote: Compressing objects:  83% (15/18)        
+2021-03-18T01:42:17.5983488Z remote: Compressing objects:  88% (16/18)        
+2021-03-18T01:42:17.5984059Z remote: Compressing objects:  94% (17/18)        
+2021-03-18T01:42:17.5984646Z remote: Compressing objects: 100% (18/18)        
+2021-03-18T01:42:17.5985284Z remote: Compressing objects: 100% (18/18), done.        
+2021-03-18T01:42:17.5986529Z remote: Total 23 (delta 0), reused 11 (delta 0), pack-reused 0        
+2021-03-18T01:42:17.5987550Z From https://github.com/peter-evans/repository-dispatch
+2021-03-18T01:42:17.5988726Z  * [new ref]         93bbf241e23270d3bb79117ff0a1fc52724f0b01 -> pull/62/merge
+2021-03-18T01:42:17.5989678Z ::endgroup::
+2021-03-18T01:42:17.5990022Z ##[endgroup]
+2021-03-18T01:42:17.5990695Z ::group::Determining the checkout info
+2021-03-18T01:42:17.5991188Z ##[group]Determining the checkout info
+2021-03-18T01:42:17.5991842Z ::endgroup::
+2021-03-18T01:42:17.5992169Z ##[endgroup]
+2021-03-18T01:42:17.5993163Z ::group::Checking out the ref
+2021-03-18T01:42:17.5993582Z ##[group]Checking out the ref
+2021-03-18T01:42:17.5994663Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/62/merge
+2021-03-18T01:42:17.5995838Z Note: switching to 'refs/remotes/pull/62/merge'.
+2021-03-18T01:42:17.5996304Z 
+2021-03-18T01:42:17.5997110Z You are in 'detached HEAD' state. You can look around, make experimental
+2021-03-18T01:42:17.5997929Z changes and commit them, and you can discard any commits you make in this
+2021-03-18T01:42:17.5998856Z state without impacting any branches by switching back to a branch.
+2021-03-18T01:42:17.5999329Z 
+2021-03-18T01:42:17.5999895Z If you want to create a new branch to retain commits you create, you may
+2021-03-18T01:42:17.6000798Z do so (now or later) by using -c with the switch command. Example:
+2021-03-18T01:42:17.6001272Z 
+2021-03-18T01:42:17.6001972Z   git switch -c <new-branch-name>
+2021-03-18T01:42:17.6002586Z 
+2021-03-18T01:42:17.6003058Z Or undo this operation with:
+2021-03-18T01:42:17.6003719Z 
+2021-03-18T01:42:17.6004461Z   git switch -
+2021-03-18T01:42:17.6004825Z 
+2021-03-18T01:42:17.6005506Z Turn off this advice by setting config variable advice.detachedHead to false
+2021-03-18T01:42:17.6006042Z 
+2021-03-18T01:42:17.6006901Z HEAD is now at 93bbf24 Merge 06142d5ab918d6cc6cbe6a9003e00dddfaae1ba5 into 9570c22b4b963aed8016e5cca0a7e00e0b80a6be
+2021-03-18T01:42:17.6007981Z ::endgroup::
+2021-03-18T01:42:17.6008336Z ##[endgroup]
+2021-03-18T01:42:17.6009251Z [command]/usr/bin/git log -1 --format='%H'
+2021-03-18T01:42:17.6010091Z '93bbf241e23270d3bb79117ff0a1fc52724f0b01'
+2021-03-18T01:42:17.6012030Z ::remove-matcher owner=checkout-git,::
+2021-03-18T01:42:17.6014735Z ##[debug]Removed matchers: 'checkout-git'
+2021-03-18T01:42:17.6059879Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:17.6070535Z ##[debug]Finishing: Run actions/checkout@v2
+2021-03-18T01:42:17.6082978Z ##[debug]Evaluating condition for step: 'Run actions/download-artifact@v2'
+2021-03-18T01:42:17.6110427Z ##[debug]Evaluating: (success() && ((matrix.target == 'built') || (github.event_name == 'pull_request')))
+2021-03-18T01:42:17.6112696Z ##[debug]Evaluating And:
+2021-03-18T01:42:17.6121159Z ##[debug]..Evaluating success:
+2021-03-18T01:42:17.6122807Z ##[debug]..=> true
+2021-03-18T01:42:17.6123864Z ##[debug]..Evaluating Or:
+2021-03-18T01:42:17.6129535Z ##[debug]....Evaluating Equal:
+2021-03-18T01:42:17.6131454Z ##[debug]......Evaluating Index:
+2021-03-18T01:42:17.6132108Z ##[debug]........Evaluating matrix:
+2021-03-18T01:42:17.6132670Z ##[debug]........=> Object
+2021-03-18T01:42:17.6133253Z ##[debug]........Evaluating String:
+2021-03-18T01:42:17.6134133Z ##[debug]........=> 'target'
+2021-03-18T01:42:17.6134975Z ##[debug]......=> 'built'
+2021-03-18T01:42:17.6135520Z ##[debug]......Evaluating String:
+2021-03-18T01:42:17.6135973Z ##[debug]......=> 'built'
+2021-03-18T01:42:17.6140985Z ##[debug]....=> true
+2021-03-18T01:42:17.6142102Z ##[debug]..=> true
+2021-03-18T01:42:17.6142767Z ##[debug]=> true
+2021-03-18T01:42:17.6150430Z ##[debug]Expanded: (true && (('built' == 'built') || (github['event_name'] == 'pull_request')))
+2021-03-18T01:42:17.6151131Z ##[debug]Result: true
+2021-03-18T01:42:17.6152897Z ##[debug]Starting: Run actions/download-artifact@v2
+2021-03-18T01:42:17.6188273Z ##[debug]Loading inputs
+2021-03-18T01:42:17.6231804Z ##[debug]Loading env
+2021-03-18T01:42:17.6239874Z ##[group]Run actions/download-artifact@v2
+2021-03-18T01:42:17.6240270Z with:
+2021-03-18T01:42:17.6240556Z   name: dist
+2021-03-18T01:42:17.6240836Z   path: dist
+2021-03-18T01:42:17.6241143Z ##[endgroup]
+2021-03-18T01:42:17.8177738Z ##[debug]Resolved path is /home/runner/work/repository-dispatch/repository-dispatch/dist
+2021-03-18T01:42:17.8194351Z Starting download for dist
+2021-03-18T01:42:17.8212636Z ##[debug]Artifact Url: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview
+2021-03-18T01:42:17.8215024Z Directory structure has been setup for the artifact
+2021-03-18T01:42:17.8216048Z ##[debug]Download file concurrency is set to 2
+2021-03-18T01:42:17.8216924Z Total number of files that will be downloaded: 1
+2021-03-18T01:42:17.8217555Z ##### Begin Diagnostic HTTP information #####
+2021-03-18T01:42:17.8218088Z Status Code: 200
+2021-03-18T01:42:17.8218533Z Status Message: OK
+2021-03-18T01:42:17.8219018Z Header Information: {
+2021-03-18T01:42:17.8220016Z   "cache-control": "no-store,no-cache",
+2021-03-18T01:42:17.8220774Z   "pragma": "no-cache",
+2021-03-18T01:42:17.8221446Z   "content-length": "65616",
+2021-03-18T01:42:17.8222244Z   "content-type": "application/octet-stream",
+2021-03-18T01:42:17.8223032Z   "content-encoding": "gzip",
+2021-03-18T01:42:17.8223892Z   "strict-transport-security": "max-age=2592000",
+2021-03-18T01:42:17.8224891Z   "x-tfs-processid": "52baf561-e7d7-4b3f-820b-3be0bf642c24",
+2021-03-18T01:42:17.8225884Z   "activityid": "0c428e49-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:17.8226791Z   "x-tfs-session": "0c428e49-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:17.8227710Z   "x-vss-e2eid": "0c428e49-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:17.8228717Z   "x-vss-senderdeploymentid": "d624195d-30e0-1768-06a5-b10a7879c7db",
+2021-03-18T01:42:17.8229618Z   "x-frame-options": "SAMEORIGIN",
+2021-03-18T01:42:17.8230618Z   "content-disposition": "attachment; filename=index.js; filename*=UTF-8''index.js",
+2021-03-18T01:42:17.8231767Z   "x-msedge-ref": "Ref A: 0281A2FF1F2740F881C79800B1BC8331 Ref B: BN3EDGE0208 Ref C: 2021-03-18T01:42:17Z",
+2021-03-18T01:42:17.8232485Z   "date": "Thu, 18 Mar 2021 01:42:17 GMT"
+2021-03-18T01:42:17.8232909Z }
+2021-03-18T01:42:17.8233378Z ###### End Diagnostic HTTP information ######
+2021-03-18T01:42:17.8234887Z ##[debug]File: 1/1. /home/runner/work/repository-dispatch/repository-dispatch/dist/index.js took 60.780 milliseconds to finish downloading
+2021-03-18T01:42:17.8236534Z Artifact dist was downloaded to /home/runner/work/repository-dispatch/repository-dispatch/dist
+2021-03-18T01:42:17.8238319Z ::set-output name=download-path::/home/runner/work/repository-dispatch/repository-dispatch/dist
+2021-03-18T01:42:17.8239464Z ##[debug]='/home/runner/work/repository-dispatch/repository-dispatch/dist'
+2021-03-18T01:42:17.8240337Z Artifact download has finished successfully
+2021-03-18T01:42:17.8241864Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:17.8243854Z ##[debug]Finishing: Run actions/download-artifact@v2
+2021-03-18T01:42:17.8249214Z ##[debug]Evaluating condition for step: 'Run actions/download-artifact@v2'
+2021-03-18T01:42:17.8251956Z ##[debug]Evaluating: (success() && ((matrix.target == 'built') || (github.event_name == 'pull_request')))
+2021-03-18T01:42:17.8252819Z ##[debug]Evaluating And:
+2021-03-18T01:42:17.8253329Z ##[debug]..Evaluating success:
+2021-03-18T01:42:17.8253924Z ##[debug]..=> true
+2021-03-18T01:42:17.8254369Z ##[debug]..Evaluating Or:
+2021-03-18T01:42:17.8254850Z ##[debug]....Evaluating Equal:
+2021-03-18T01:42:17.8255345Z ##[debug]......Evaluating Index:
+2021-03-18T01:42:17.8255872Z ##[debug]........Evaluating matrix:
+2021-03-18T01:42:17.8256323Z ##[debug]........=> Object
+2021-03-18T01:42:17.8256804Z ##[debug]........Evaluating String:
+2021-03-18T01:42:17.8257244Z ##[debug]........=> 'target'
+2021-03-18T01:42:17.8257736Z ##[debug]......=> 'built'
+2021-03-18T01:42:17.8258213Z ##[debug]......Evaluating String:
+2021-03-18T01:42:17.8258637Z ##[debug]......=> 'built'
+2021-03-18T01:42:17.8259046Z ##[debug]....=> true
+2021-03-18T01:42:17.8259418Z ##[debug]..=> true
+2021-03-18T01:42:17.8259780Z ##[debug]=> true
+2021-03-18T01:42:17.8260684Z ##[debug]Expanded: (true && (('built' == 'built') || (github['event_name'] == 'pull_request')))
+2021-03-18T01:42:17.8261319Z ##[debug]Result: true
+2021-03-18T01:42:17.8262533Z ##[debug]Starting: Run actions/download-artifact@v2
+2021-03-18T01:42:17.8285856Z ##[debug]Loading inputs
+2021-03-18T01:42:17.8286918Z ##[debug]Loading env
+2021-03-18T01:42:17.8294969Z ##[group]Run actions/download-artifact@v2
+2021-03-18T01:42:17.8297034Z with:
+2021-03-18T01:42:17.8297451Z   name: action.yml
+2021-03-18T01:42:17.8297831Z   path: .
+2021-03-18T01:42:17.8298192Z ##[endgroup]
+2021-03-18T01:42:17.8734715Z ##[debug]Resolved path is /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:17.8740355Z Starting download for action.yml
+2021-03-18T01:42:17.8749690Z ##[debug]Artifact Url: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview
+2021-03-18T01:42:17.9452277Z Directory structure has been setup for the artifact
+2021-03-18T01:42:17.9456293Z ##[debug]Download file concurrency is set to 2
+2021-03-18T01:42:17.9456791Z Total number of files that will be downloaded: 1
+2021-03-18T01:42:17.9804160Z ##### Begin Diagnostic HTTP information #####
+2021-03-18T01:42:17.9804576Z Status Code: 200
+2021-03-18T01:42:17.9804908Z Status Message: OK
+2021-03-18T01:42:17.9805256Z Header Information: {
+2021-03-18T01:42:17.9806184Z   "cache-control": "no-store,no-cache",
+2021-03-18T01:42:17.9806736Z   "pragma": "no-cache",
+2021-03-18T01:42:17.9807365Z   "content-length": "349",
+2021-03-18T01:42:17.9807939Z   "content-type": "application/octet-stream",
+2021-03-18T01:42:17.9808507Z   "content-encoding": "gzip",
+2021-03-18T01:42:17.9809144Z   "strict-transport-security": "max-age=2592000",
+2021-03-18T01:42:17.9809910Z   "x-tfs-processid": "fec40af2-28b5-4f40-a206-33689fd4a846",
+2021-03-18T01:42:17.9810701Z   "activityid": "3fa732eb-e695-46a1-89ad-135c8a8225d2",
+2021-03-18T01:42:17.9811435Z   "x-tfs-session": "3fa732eb-e695-46a1-89ad-135c8a8225d2",
+2021-03-18T01:42:17.9812741Z   "x-vss-e2eid": "3fa732eb-e695-46a1-89ad-135c8a8225d2",
+2021-03-18T01:42:17.9813564Z   "x-vss-senderdeploymentid": "d624195d-30e0-1768-06a5-b10a7879c7db",
+2021-03-18T01:42:17.9814246Z   "x-frame-options": "SAMEORIGIN",
+2021-03-18T01:42:17.9815024Z   "content-disposition": "attachment; filename=action.yml; filename*=UTF-8''action.yml",
+2021-03-18T01:42:17.9815988Z   "x-msedge-ref": "Ref A: 71E23EEBDC0542D48B001F83884E1234 Ref B: BN3EDGE0714 Ref C: 2021-03-18T01:42:17Z",
+2021-03-18T01:42:17.9816548Z   "date": "Thu, 18 Mar 2021 01:42:17 GMT"
+2021-03-18T01:42:17.9816824Z }
+2021-03-18T01:42:17.9817169Z ###### End Diagnostic HTTP information ######
+2021-03-18T01:42:17.9834086Z ##[debug]File: 1/1. /home/runner/work/repository-dispatch/repository-dispatch/action.yml took 37.026 milliseconds to finish downloading
+2021-03-18T01:42:17.9846453Z Artifact action.yml was downloaded to /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:17.9848622Z ::set-output name=download-path::/home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:17.9849653Z ##[debug]='/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:17.9850505Z Artifact download has finished successfully
+2021-03-18T01:42:17.9882760Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:17.9884443Z ##[debug]Finishing: Run actions/download-artifact@v2
+2021-03-18T01:42:17.9888859Z ##[debug]Evaluating condition for step: 'Test repository dispatch'
+2021-03-18T01:42:17.9890521Z ##[debug]Evaluating: success()
+2021-03-18T01:42:17.9891057Z ##[debug]Evaluating success:
+2021-03-18T01:42:17.9891534Z ##[debug]=> true
+2021-03-18T01:42:17.9892051Z ##[debug]Result: true
+2021-03-18T01:42:17.9892817Z ##[debug]Starting: Test repository dispatch
+2021-03-18T01:42:17.9917393Z ##[debug]Loading inputs
+2021-03-18T01:42:17.9921641Z ##[debug]Evaluating: secrets.REPO_ACCESS_TOKEN
+2021-03-18T01:42:17.9922296Z ##[debug]Evaluating Index:
+2021-03-18T01:42:17.9922670Z ##[debug]..Evaluating secrets:
+2021-03-18T01:42:17.9923048Z ##[debug]..=> Object
+2021-03-18T01:42:17.9923397Z ##[debug]..Evaluating String:
+2021-03-18T01:42:17.9923779Z ##[debug]..=> 'REPO_ACCESS_TOKEN'
+2021-03-18T01:42:17.9924727Z ##[debug]=> '***'
+2021-03-18T01:42:17.9925325Z ##[debug]Result: '***'
+2021-03-18T01:42:17.9927483Z ##[debug]Evaluating: format('{{"ref": "{0}", "sha": "{1}"}}', github.ref, github.sha)
+2021-03-18T01:42:17.9928370Z ##[debug]Evaluating format:
+2021-03-18T01:42:17.9947472Z ##[debug]..Evaluating String:
+2021-03-18T01:42:17.9947880Z ##[debug]..=> '{{"ref": "{0}", "sha": "{1}"}}'
+2021-03-18T01:42:17.9968816Z ##[debug]..Evaluating Index:
+2021-03-18T01:42:17.9969242Z ##[debug]....Evaluating github:
+2021-03-18T01:42:17.9969616Z ##[debug]....=> Object
+2021-03-18T01:42:17.9969981Z ##[debug]....Evaluating String:
+2021-03-18T01:42:17.9970325Z ##[debug]....=> 'ref'
+2021-03-18T01:42:17.9970680Z ##[debug]..=> 'refs/pull/62/merge'
+2021-03-18T01:42:17.9972170Z ##[debug]..Evaluating Index:
+2021-03-18T01:42:17.9972546Z ##[debug]....Evaluating github:
+2021-03-18T01:42:17.9972918Z ##[debug]....=> Object
+2021-03-18T01:42:17.9973264Z ##[debug]....Evaluating String:
+2021-03-18T01:42:17.9973602Z ##[debug]....=> 'sha'
+2021-03-18T01:42:17.9974085Z ##[debug]..=> '93bbf241e23270d3bb79117ff0a1fc52724f0b01'
+2021-03-18T01:42:17.9974907Z ##[debug]=> '{"ref": "refs/pull/62/merge", "sha": "93bbf241e23270d3bb79117ff0a1fc52724f0b01"}'
+2021-03-18T01:42:17.9975787Z ##[debug]Result: '{"ref": "refs/pull/62/merge", "sha": "93bbf241e23270d3bb79117ff0a1fc52724f0b01"}'
+2021-03-18T01:42:17.9976980Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:17.9977410Z ##[debug]Evaluating Index:
+2021-03-18T01:42:17.9977786Z ##[debug]..Evaluating github:
+2021-03-18T01:42:17.9978136Z ##[debug]..=> Object
+2021-03-18T01:42:17.9978490Z ##[debug]..Evaluating String:
+2021-03-18T01:42:17.9978846Z ##[debug]..=> 'repository'
+2021-03-18T01:42:17.9979342Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:17.9979951Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:17.9981266Z ##[debug]Loading env
+2021-03-18T01:42:17.9987125Z ##[group]Run ./
+2021-03-18T01:42:17.9987381Z with:
+2021-03-18T01:42:17.9987929Z   token: ***
+2021-03-18T01:42:17.9988231Z   event-type: tests
+2021-03-18T01:42:17.9988827Z   client-payload: {"ref": "refs/pull/62/merge", "sha": "93bbf241e23270d3bb79117ff0a1fc52724f0b01"}
+2021-03-18T01:42:17.9989547Z   repository: peter-evans/repository-dispatch
+2021-03-18T01:42:17.9990008Z ##[endgroup]
+2021-03-18T01:42:18.0740081Z ##[debug]Inputs: {
+2021-03-18T01:42:18.0740857Z ##[debug]  token: '***',
+2021-03-18T01:42:18.0741373Z ##[debug]  repository: 'peter-evans/repository-dispatch',
+2021-03-18T01:42:18.0741923Z ##[debug]  eventType: 'tests',
+2021-03-18T01:42:18.0742709Z ##[debug]  clientPayload: '{"ref": "refs/pull/62/merge", "sha": "93bbf241e23270d3bb79117ff0a1fc52724f0b01"}'
+2021-03-18T01:42:18.0743271Z ##[debug]}
+2021-03-18T01:42:18.2207020Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:18.2208609Z ##[debug]Finishing: Test repository dispatch
+2021-03-18T01:42:18.2214363Z ##[debug]Evaluating condition for step: 'Test repository dispatch (default payload)'
+2021-03-18T01:42:18.2216125Z ##[debug]Evaluating: success()
+2021-03-18T01:42:18.2216651Z ##[debug]Evaluating success:
+2021-03-18T01:42:18.2217152Z ##[debug]=> true
+2021-03-18T01:42:18.2217671Z ##[debug]Result: true
+2021-03-18T01:42:18.2218513Z ##[debug]Starting: Test repository dispatch (default payload)
+2021-03-18T01:42:18.2243171Z ##[debug]Loading inputs
+2021-03-18T01:42:18.2244713Z ##[debug]Evaluating: secrets.REPO_ACCESS_TOKEN
+2021-03-18T01:42:18.2245585Z ##[debug]Evaluating Index:
+2021-03-18T01:42:18.2246655Z ##[debug]..Evaluating secrets:
+2021-03-18T01:42:18.2247278Z ##[debug]..=> Object
+2021-03-18T01:42:18.2248508Z ##[debug]..Evaluating String:
+2021-03-18T01:42:18.2248929Z ##[debug]..=> 'REPO_ACCESS_TOKEN'
+2021-03-18T01:42:18.2249802Z ##[debug]=> '***'
+2021-03-18T01:42:18.2250378Z ##[debug]Result: '***'
+2021-03-18T01:42:18.2251280Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:18.2251743Z ##[debug]Evaluating Index:
+2021-03-18T01:42:18.2252125Z ##[debug]..Evaluating github:
+2021-03-18T01:42:18.2252476Z ##[debug]..=> Object
+2021-03-18T01:42:18.2252838Z ##[debug]..Evaluating String:
+2021-03-18T01:42:18.2253197Z ##[debug]..=> 'repository'
+2021-03-18T01:42:18.2253696Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:18.2254475Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:18.2256402Z ##[debug]Loading env
+2021-03-18T01:42:18.2262134Z ##[group]Run ./
+2021-03-18T01:42:18.2262405Z with:
+2021-03-18T01:42:18.2262928Z   token: ***
+2021-03-18T01:42:18.2263240Z   event-type: tests
+2021-03-18T01:42:18.2263694Z   repository: peter-evans/repository-dispatch
+2021-03-18T01:42:18.2264170Z   client-payload: {}
+2021-03-18T01:42:18.2264482Z ##[endgroup]
+2021-03-18T01:42:18.2884840Z ##[debug]Inputs: {
+2021-03-18T01:42:18.2885533Z ##[debug]  token: '***',
+2021-03-18T01:42:18.2886019Z ##[debug]  repository: 'peter-evans/repository-dispatch',
+2021-03-18T01:42:18.2886568Z ##[debug]  eventType: 'tests',
+2021-03-18T01:42:18.2886941Z ##[debug]  clientPayload: '{}'
+2021-03-18T01:42:18.2887269Z ##[debug]}
+2021-03-18T01:42:18.4486275Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:18.4489903Z ##[debug]Finishing: Test repository dispatch (default payload)
+2021-03-18T01:42:18.4499877Z ##[debug]Evaluating condition for step: 'Post Run actions/checkout@v2'
+2021-03-18T01:42:18.4504427Z ##[debug]Evaluating: always()
+2021-03-18T01:42:18.4505061Z ##[debug]Evaluating always:
+2021-03-18T01:42:18.4505727Z ##[debug]=> true
+2021-03-18T01:42:18.4506380Z ##[debug]Result: true
+2021-03-18T01:42:18.4507832Z ##[debug]Starting: Post Run actions/checkout@v2
+2021-03-18T01:42:18.4564596Z ##[debug]Loading inputs
+2021-03-18T01:42:18.4566031Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:18.4566756Z ##[debug]Evaluating Index:
+2021-03-18T01:42:18.4567824Z ##[debug]..Evaluating github:
+2021-03-18T01:42:18.4568472Z ##[debug]..=> Object
+2021-03-18T01:42:18.4569177Z ##[debug]..Evaluating String:
+2021-03-18T01:42:18.4569630Z ##[debug]..=> 'repository'
+2021-03-18T01:42:18.4571744Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:18.4572555Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:18.4575130Z ##[debug]Evaluating: github.token
+2021-03-18T01:42:18.4575643Z ##[debug]Evaluating Index:
+2021-03-18T01:42:18.4576331Z ##[debug]..Evaluating github:
+2021-03-18T01:42:18.4576741Z ##[debug]..=> Object
+2021-03-18T01:42:18.4577130Z ##[debug]..Evaluating String:
+2021-03-18T01:42:18.4577522Z ##[debug]..=> 'token'
+2021-03-18T01:42:18.4578898Z ##[debug]=> '***'
+2021-03-18T01:42:18.4579823Z ##[debug]Result: '***'
+2021-03-18T01:42:18.4587460Z ##[debug]Loading env
+2021-03-18T01:42:18.4600723Z Post job cleanup.
+2021-03-18T01:42:18.5676253Z ##[debug]Getting git version
+2021-03-18T01:42:18.5704900Z [command]/usr/bin/git version
+2021-03-18T01:42:18.5758158Z git version 2.30.1
+2021-03-18T01:42:18.5779619Z ##[debug]Set git useragent to: git/2.30.1 (github-actions-checkout)
+2021-03-18T01:42:18.5788821Z ::add-mask::***
+2021-03-18T01:42:18.5803961Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-03-18T01:42:18.5841886Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-03-18T01:42:18.6067495Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-03-18T01:42:18.6099061Z http.https://github.com/.extraheader
+2021-03-18T01:42:18.6100864Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2021-03-18T01:42:18.6128567Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-03-18T01:42:18.6364097Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:18.6366064Z ##[debug]Finishing: Post Run actions/checkout@v2
+2021-03-18T01:42:18.6375487Z ##[debug]Starting: Complete job
+2021-03-18T01:42:18.6378270Z Cleaning up orphan processes
+2021-03-18T01:42:18.6535868Z ##[debug]Finishing: Complete job
+2021-03-18T01:42:18.6542404Z ##[debug]Finishing: test (built)
+2021-03-18T01:42:06.5665090Z ##[section]Starting: Request a runner to run this job
+2021-03-18T01:42:06.8956104Z Can't find any online and idle self-hosted runner in current repository that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:42:06.8956187Z Can't find any online and idle self-hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:42:06.8956574Z Found online and idle hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2021-03-18T01:42:07.0088448Z ##[section]Finishing: Request a runner to run this job
+2021-03-18T01:42:11.9815845Z ##[debug]Starting: test (committed)
+2021-03-18T01:42:11.9839434Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+2021-03-18T01:42:11.9896317Z ##[debug]Starting: Set up job
+2021-03-18T01:42:11.9896997Z Current runner version: '2.277.1'
+2021-03-18T01:42:11.9923305Z ##[group]Operating System
+2021-03-18T01:42:11.9924351Z Ubuntu
+2021-03-18T01:42:11.9924828Z 20.04.2
+2021-03-18T01:42:11.9925341Z LTS
+2021-03-18T01:42:11.9925838Z ##[endgroup]
+2021-03-18T01:42:11.9926508Z ##[group]Virtual Environment
+2021-03-18T01:42:11.9927438Z Environment: ubuntu-20.04
+2021-03-18T01:42:11.9928097Z Version: 20210309.1
+2021-03-18T01:42:11.9929190Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210309.1/images/linux/Ubuntu2004-README.md
+2021-03-18T01:42:11.9930719Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F
+2021-03-18T01:42:11.9931726Z ##[endgroup]
+2021-03-18T01:42:11.9934095Z ##[group]GITHUB_TOKEN Permissions
+2021-03-18T01:42:11.9935415Z Actions: write
+2021-03-18T01:42:11.9936113Z Checks: write
+2021-03-18T01:42:11.9936673Z Contents: write
+2021-03-18T01:42:11.9937340Z Deployments: write
+2021-03-18T01:42:11.9937963Z Issues: write
+2021-03-18T01:42:11.9938501Z Metadata: read
+2021-03-18T01:42:11.9939225Z OrganizationPackages: write
+2021-03-18T01:42:11.9939899Z Packages: write
+2021-03-18T01:42:11.9940578Z PullRequests: write
+2021-03-18T01:42:11.9941263Z RepositoryProjects: write
+2021-03-18T01:42:11.9942008Z SecurityEvents: write
+2021-03-18T01:42:11.9942617Z Statuses: write
+2021-03-18T01:42:11.9943335Z ##[endgroup]
+2021-03-18T01:42:11.9946566Z ##[debug]Primary repository: peter-evans/repository-dispatch
+2021-03-18T01:42:11.9947742Z Prepare workflow directory
+2021-03-18T01:42:12.0007945Z ##[debug]Creating pipeline directory: '/home/runner/work/repository-dispatch'
+2021-03-18T01:42:12.0011775Z ##[debug]Creating workspace directory: '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:12.0013841Z ##[debug]Update context data
+2021-03-18T01:42:12.0016363Z ##[debug]Evaluating job-level environment variables
+2021-03-18T01:42:12.0610524Z ##[debug]Evaluating job container
+2021-03-18T01:42:12.0614632Z ##[debug]Evaluating job service containers
+2021-03-18T01:42:12.0618517Z ##[debug]Evaluating job defaults
+2021-03-18T01:42:12.0631549Z Prepare all required actions
+2021-03-18T01:42:12.0643079Z Getting action download info
+2021-03-18T01:42:12.4228225Z Download action repository 'actions/checkout@v2'
+2021-03-18T01:42:13.6105457Z ##[debug]Download 'https://api.github.com/repos/actions/checkout/tarball/5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f' to '/home/runner/work/_actions/_temp_b642b7be-53a1-46df-b2de-f3f4236633bd/a2204cf4-dd6c-45b0-8f93-6027e40cac07.tar.gz'
+2021-03-18T01:42:13.7262128Z ##[debug]Unwrap 'actions-checkout-5a4ac90' to '/home/runner/work/_actions/actions/checkout/v2'
+2021-03-18T01:42:13.7815069Z ##[debug]Archive '/home/runner/work/_actions/_temp_b642b7be-53a1-46df-b2de-f3f4236633bd/a2204cf4-dd6c-45b0-8f93-6027e40cac07.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v2'.
+2021-03-18T01:42:14.5461096Z Download action repository 'actions/download-artifact@v2'
+2021-03-18T01:42:14.6823669Z ##[debug]Download 'https://api.github.com/repos/actions/download-artifact/tarball/4a7a711286f30c025902c28b541c10e147a9b843' to '/home/runner/work/_actions/_temp_8b9f8beb-af66-4da5-9d3f-3ab4659b9d28/4efd6f52-4869-455d-aaaa-475dd9975c85.tar.gz'
+2021-03-18T01:42:14.6945857Z ##[debug]Unwrap 'actions-download-artifact-4a7a711' to '/home/runner/work/_actions/actions/download-artifact/v2'
+2021-03-18T01:42:14.6990320Z ##[debug]Archive '/home/runner/work/_actions/_temp_8b9f8beb-af66-4da5-9d3f-3ab4659b9d28/4efd6f52-4869-455d-aaaa-475dd9975c85.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/download-artifact/v2'.
+2021-03-18T01:42:14.7009999Z ##[debug]Action 'actions/download-artifact@v2' already downloaded at '/home/runner/work/_actions/actions/download-artifact/v2'.
+2021-03-18T01:42:14.7015499Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v2/action.yml'.
+2021-03-18T01:42:14.7825757Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/v2/action.yml'.
+2021-03-18T01:42:14.7849971Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/v2/action.yml'.
+2021-03-18T01:42:14.8018473Z ##[debug]Set step 'actionscheckout' display name to: 'Run actions/checkout@v2'
+2021-03-18T01:42:14.8023018Z ##[debug]Set step 'actionsdownload-artifact1' display name to: 'Run actions/download-artifact@v2'
+2021-03-18T01:42:14.8025574Z ##[debug]Set step 'actionsdownload-artifact2' display name to: 'Run actions/download-artifact@v2'
+2021-03-18T01:42:14.8027708Z ##[debug]Set step 'self1' display name to: 'Test repository dispatch'
+2021-03-18T01:42:14.8029714Z ##[debug]Set step 'self2' display name to: 'Test repository dispatch (default payload)'
+2021-03-18T01:42:14.8050328Z ##[debug]Collect running processes for tracking orphan processes.
+2021-03-18T01:42:14.8269470Z ##[debug]Finishing: Set up job
+2021-03-18T01:42:14.8295632Z ##[debug]Evaluating condition for step: 'Run actions/checkout@v2'
+2021-03-18T01:42:14.8355443Z ##[debug]Evaluating: success()
+2021-03-18T01:42:14.8362518Z ##[debug]Evaluating success:
+2021-03-18T01:42:14.8391901Z ##[debug]=> true
+2021-03-18T01:42:14.8400562Z ##[debug]Result: true
+2021-03-18T01:42:14.8438173Z ##[debug]Starting: Run actions/checkout@v2
+2021-03-18T01:42:14.8478535Z ##[debug]Register post job cleanup for action: actions/checkout@v2
+2021-03-18T01:42:14.8574872Z ##[debug]Loading inputs
+2021-03-18T01:42:14.8583100Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:14.8583969Z ##[debug]Evaluating Index:
+2021-03-18T01:42:14.8586724Z ##[debug]..Evaluating github:
+2021-03-18T01:42:14.8588268Z ##[debug]..=> Object
+2021-03-18T01:42:14.8603878Z ##[debug]..Evaluating String:
+2021-03-18T01:42:14.8605049Z ##[debug]..=> 'repository'
+2021-03-18T01:42:14.8610637Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:14.8613183Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:14.8616920Z ##[debug]Evaluating: github.token
+2021-03-18T01:42:14.8617607Z ##[debug]Evaluating Index:
+2021-03-18T01:42:14.8618231Z ##[debug]..Evaluating github:
+2021-03-18T01:42:14.8618851Z ##[debug]..=> Object
+2021-03-18T01:42:14.8619438Z ##[debug]..Evaluating String:
+2021-03-18T01:42:14.8620027Z ##[debug]..=> 'token'
+2021-03-18T01:42:14.8621351Z ##[debug]=> '***'
+2021-03-18T01:42:14.8622255Z ##[debug]Result: '***'
+2021-03-18T01:42:14.8630862Z ##[debug]Loading env
+2021-03-18T01:42:14.8685648Z ##[group]Run actions/checkout@v2
+2021-03-18T01:42:14.8686342Z with:
+2021-03-18T01:42:14.8687054Z   repository: peter-evans/repository-dispatch
+2021-03-18T01:42:14.8688362Z   token: ***
+2021-03-18T01:42:14.8688894Z   ssh-strict: true
+2021-03-18T01:42:14.8689523Z   persist-credentials: true
+2021-03-18T01:42:14.8690140Z   clean: true
+2021-03-18T01:42:14.8690649Z   fetch-depth: 1
+2021-03-18T01:42:14.8691167Z   lfs: false
+2021-03-18T01:42:14.8691675Z   submodules: false
+2021-03-18T01:42:14.8692245Z ##[endgroup]
+2021-03-18T01:42:15.2542587Z ::save-state name=isPost,::true
+2021-03-18T01:42:15.2544135Z ##[debug]Save intra-action state isPost = true
+2021-03-18T01:42:15.3018184Z ##[debug]GITHUB_WORKSPACE = '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:15.3089777Z ##[debug]qualified repository = 'peter-evans/repository-dispatch'
+2021-03-18T01:42:15.3091307Z ##[debug]ref = 'refs/pull/62/merge'
+2021-03-18T01:42:15.3093074Z ##[debug]commit = '93bbf241e23270d3bb79117ff0a1fc52724f0b01'
+2021-03-18T01:42:15.3094058Z ##[debug]clean = true
+2021-03-18T01:42:15.3094771Z ##[debug]fetch depth = 1
+2021-03-18T01:42:15.3095528Z ##[debug]lfs = false
+2021-03-18T01:42:15.3096234Z ##[debug]submodules = false
+2021-03-18T01:42:15.3097035Z ##[debug]recursive submodules = false
+2021-03-18T01:42:15.3098570Z ::add-matcher::/home/runner/work/_actions/actions/checkout/v2/dist/problem-matcher.json
+2021-03-18T01:42:15.3193718Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2021-03-18T01:42:15.3196936Z Syncing repository: peter-evans/repository-dispatch
+2021-03-18T01:42:15.3197946Z ::group::Getting Git version info
+2021-03-18T01:42:15.3198779Z ##[group]Getting Git version info
+2021-03-18T01:42:15.3200003Z Working directory is '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:15.3230033Z ##[debug]Getting git version
+2021-03-18T01:42:15.3243897Z [command]/usr/bin/git version
+2021-03-18T01:42:15.3376278Z git version 2.30.1
+2021-03-18T01:42:15.3411192Z ##[debug]Set git useragent to: git/2.30.1 (github-actions-checkout)
+2021-03-18T01:42:15.3412160Z ::endgroup::
+2021-03-18T01:42:15.3413168Z ##[endgroup]
+2021-03-18T01:42:15.3414385Z Deleting the contents of '/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:15.3416602Z ::save-state name=repositoryPath,::/home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:15.3418480Z ##[debug]Save intra-action state repositoryPath = /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:15.3419706Z ::group::Initializing the repository
+2021-03-18T01:42:15.3420450Z ##[group]Initializing the repository
+2021-03-18T01:42:15.3422246Z [command]/usr/bin/git init /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:15.3511185Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-03-18T01:42:15.3512789Z hint: is subject to change. To configure the initial branch name to use in all
+2021-03-18T01:42:15.3513764Z hint: of your new repositories, which will suppress this warning, call:
+2021-03-18T01:42:15.3514468Z hint: 
+2021-03-18T01:42:15.3515831Z hint: 	git config --global init.defaultBranch <name>
+2021-03-18T01:42:15.3516497Z hint: 
+2021-03-18T01:42:15.3517381Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-03-18T01:42:15.3518529Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-03-18T01:42:15.3519308Z hint: 
+2021-03-18T01:42:15.3519962Z hint: 	git branch -m <name>
+2021-03-18T01:42:15.3521629Z Initialized empty Git repository in /home/runner/work/repository-dispatch/repository-dispatch/.git/
+2021-03-18T01:42:15.3527029Z [command]/usr/bin/git remote add origin https://github.com/peter-evans/repository-dispatch
+2021-03-18T01:42:15.3572482Z ::endgroup::
+2021-03-18T01:42:15.3573049Z ##[endgroup]
+2021-03-18T01:42:15.3574051Z ::group::Disabling automatic garbage collection
+2021-03-18T01:42:15.3574865Z ##[group]Disabling automatic garbage collection
+2021-03-18T01:42:15.3577223Z [command]/usr/bin/git config --local gc.auto 0
+2021-03-18T01:42:15.3613612Z ::endgroup::
+2021-03-18T01:42:15.3614170Z ##[endgroup]
+2021-03-18T01:42:15.8198788Z ::add-mask::***
+2021-03-18T01:42:15.8254595Z ::group::Setting up auth
+2021-03-18T01:42:15.8255223Z ##[group]Setting up auth
+2021-03-18T01:42:15.8256673Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-03-18T01:42:15.8258535Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-03-18T01:42:15.8260364Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-03-18T01:42:15.8262553Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-03-18T01:42:15.8264695Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-03-18T01:42:15.8265783Z ::endgroup::
+2021-03-18T01:42:15.8266305Z ##[endgroup]
+2021-03-18T01:42:15.8267020Z ::group::Fetching the repository
+2021-03-18T01:42:15.8267786Z ##[group]Fetching the repository
+2021-03-18T01:42:15.8269534Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +93bbf241e23270d3bb79117ff0a1fc52724f0b01:refs/remotes/pull/62/merge
+2021-03-18T01:42:15.8271395Z remote: Enumerating objects: 23, done.        
+2021-03-18T01:42:15.8272235Z remote: Counting objects:   4% (1/23)        
+2021-03-18T01:42:15.8272994Z remote: Counting objects:   8% (2/23)        
+2021-03-18T01:42:15.8279630Z remote: Counting objects:  13% (3/23)        
+2021-03-18T01:42:15.8280429Z remote: Counting objects:  17% (4/23)        
+2021-03-18T01:42:15.8281216Z remote: Counting objects:  21% (5/23)        
+2021-03-18T01:42:15.8281985Z remote: Counting objects:  26% (6/23)        
+2021-03-18T01:42:15.8282729Z remote: Counting objects:  30% (7/23)        
+2021-03-18T01:42:15.8283498Z remote: Counting objects:  34% (8/23)        
+2021-03-18T01:42:15.8284235Z remote: Counting objects:  39% (9/23)        
+2021-03-18T01:42:15.8284996Z remote: Counting objects:  43% (10/23)        
+2021-03-18T01:42:15.8285740Z remote: Counting objects:  47% (11/23)        
+2021-03-18T01:42:15.8286573Z remote: Counting objects:  52% (12/23)        
+2021-03-18T01:42:15.8287720Z remote: Counting objects:  56% (13/23)        
+2021-03-18T01:42:15.8288801Z remote: Counting objects:  60% (14/23)        
+2021-03-18T01:42:15.8289570Z remote: Counting objects:  65% (15/23)        
+2021-03-18T01:42:15.8290398Z remote: Counting objects:  69% (16/23)        
+2021-03-18T01:42:15.8291044Z remote: Counting objects:  73% (17/23)        
+2021-03-18T01:42:15.8291672Z remote: Counting objects:  78% (18/23)        
+2021-03-18T01:42:15.8292314Z remote: Counting objects:  82% (19/23)        
+2021-03-18T01:42:15.8292938Z remote: Counting objects:  86% (20/23)        
+2021-03-18T01:42:15.8293576Z remote: Counting objects:  91% (21/23)        
+2021-03-18T01:42:15.8294347Z remote: Counting objects:  95% (22/23)        
+2021-03-18T01:42:15.8295109Z remote: Counting objects: 100% (23/23)        
+2021-03-18T01:42:15.8295870Z remote: Counting objects: 100% (23/23), done.        
+2021-03-18T01:42:15.8296839Z remote: Compressing objects:   5% (1/18)        
+2021-03-18T01:42:15.8297602Z remote: Compressing objects:  11% (2/18)        
+2021-03-18T01:42:15.8298356Z remote: Compressing objects:  16% (3/18)        
+2021-03-18T01:42:15.8299110Z remote: Compressing objects:  22% (4/18)        
+2021-03-18T01:42:15.8299840Z remote: Compressing objects:  27% (5/18)        
+2021-03-18T01:42:15.8300585Z remote: Compressing objects:  33% (6/18)        
+2021-03-18T01:42:15.8301320Z remote: Compressing objects:  38% (7/18)        
+2021-03-18T01:42:15.8302069Z remote: Compressing objects:  44% (8/18)        
+2021-03-18T01:42:15.8302799Z remote: Compressing objects:  50% (9/18)        
+2021-03-18T01:42:15.8303547Z remote: Compressing objects:  55% (10/18)        
+2021-03-18T01:42:15.8304302Z remote: Compressing objects:  61% (11/18)        
+2021-03-18T01:42:15.8305232Z remote: Compressing objects:  66% (12/18)        
+2021-03-18T01:42:15.8306035Z remote: Compressing objects:  72% (13/18)        
+2021-03-18T01:42:15.8306821Z remote: Compressing objects:  77% (14/18)        
+2021-03-18T01:42:15.8307640Z remote: Compressing objects:  83% (15/18)        
+2021-03-18T01:42:15.8308432Z remote: Compressing objects:  88% (16/18)        
+2021-03-18T01:42:15.8309229Z remote: Compressing objects:  94% (17/18)        
+2021-03-18T01:42:15.8310023Z remote: Compressing objects: 100% (18/18)        
+2021-03-18T01:42:15.8310839Z remote: Compressing objects: 100% (18/18), done.        
+2021-03-18T01:42:15.8312119Z remote: Total 23 (delta 0), reused 11 (delta 0), pack-reused 0        
+2021-03-18T01:42:15.8313410Z From https://github.com/peter-evans/repository-dispatch
+2021-03-18T01:42:15.8314852Z  * [new ref]         93bbf241e23270d3bb79117ff0a1fc52724f0b01 -> pull/62/merge
+2021-03-18T01:42:15.8315806Z ::endgroup::
+2021-03-18T01:42:15.8316333Z ##[endgroup]
+2021-03-18T01:42:15.8317061Z ::group::Determining the checkout info
+2021-03-18T01:42:15.8317769Z ##[group]Determining the checkout info
+2021-03-18T01:42:15.8318504Z ::endgroup::
+2021-03-18T01:42:15.8319233Z ##[endgroup]
+2021-03-18T01:42:15.8320146Z ::group::Checking out the ref
+2021-03-18T01:42:15.8320734Z ##[group]Checking out the ref
+2021-03-18T01:42:15.8321916Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/62/merge
+2021-03-18T01:42:15.8323074Z Note: switching to 'refs/remotes/pull/62/merge'.
+2021-03-18T01:42:15.8323642Z 
+2021-03-18T01:42:15.8324657Z You are in 'detached HEAD' state. You can look around, make experimental
+2021-03-18T01:42:15.8325695Z changes and commit them, and you can discard any commits you make in this
+2021-03-18T01:42:15.8326699Z state without impacting any branches by switching back to a branch.
+2021-03-18T01:42:15.8327485Z 
+2021-03-18T01:42:15.8328245Z If you want to create a new branch to retain commits you create, you may
+2021-03-18T01:42:15.8329433Z do so (now or later) by using -c with the switch command. Example:
+2021-03-18T01:42:15.8330111Z 
+2021-03-18T01:42:15.8330937Z   git switch -c <new-branch-name>
+2021-03-18T01:42:15.8331476Z 
+2021-03-18T01:42:15.8332108Z Or undo this operation with:
+2021-03-18T01:42:15.8332722Z 
+2021-03-18T01:42:15.8333466Z   git switch -
+2021-03-18T01:42:15.8333907Z 
+2021-03-18T01:42:15.8334782Z Turn off this advice by setting config variable advice.detachedHead to false
+2021-03-18T01:42:15.8335476Z 
+2021-03-18T01:42:15.8336540Z HEAD is now at 93bbf24 Merge 06142d5ab918d6cc6cbe6a9003e00dddfaae1ba5 into 9570c22b4b963aed8016e5cca0a7e00e0b80a6be
+2021-03-18T01:42:15.8337618Z ::endgroup::
+2021-03-18T01:42:15.8338116Z ##[endgroup]
+2021-03-18T01:42:15.8339021Z [command]/usr/bin/git log -1 --format='%H'
+2021-03-18T01:42:15.8340098Z '93bbf241e23270d3bb79117ff0a1fc52724f0b01'
+2021-03-18T01:42:15.8341598Z ::remove-matcher owner=checkout-git,::
+2021-03-18T01:42:15.8343730Z ##[debug]Removed matchers: 'checkout-git'
+2021-03-18T01:42:15.8353170Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:15.8363879Z ##[debug]Finishing: Run actions/checkout@v2
+2021-03-18T01:42:15.8376805Z ##[debug]Evaluating condition for step: 'Run actions/download-artifact@v2'
+2021-03-18T01:42:15.8402771Z ##[debug]Evaluating: (success() && ((matrix.target == 'built') || (github.event_name == 'pull_request')))
+2021-03-18T01:42:15.8404091Z ##[debug]Evaluating And:
+2021-03-18T01:42:15.8410854Z ##[debug]..Evaluating success:
+2021-03-18T01:42:15.8412243Z ##[debug]..=> true
+2021-03-18T01:42:15.8413173Z ##[debug]..Evaluating Or:
+2021-03-18T01:42:15.8418768Z ##[debug]....Evaluating Equal:
+2021-03-18T01:42:15.8420790Z ##[debug]......Evaluating Index:
+2021-03-18T01:42:15.8421675Z ##[debug]........Evaluating matrix:
+2021-03-18T01:42:15.8422500Z ##[debug]........=> Object
+2021-03-18T01:42:15.8423366Z ##[debug]........Evaluating String:
+2021-03-18T01:42:15.8424139Z ##[debug]........=> 'target'
+2021-03-18T01:42:15.8425182Z ##[debug]......=> 'committed'
+2021-03-18T01:42:15.8426038Z ##[debug]......Evaluating String:
+2021-03-18T01:42:15.8426761Z ##[debug]......=> 'built'
+2021-03-18T01:42:15.8431852Z ##[debug]....=> false
+2021-03-18T01:42:15.8432880Z ##[debug]....Evaluating Equal:
+2021-03-18T01:42:15.8433739Z ##[debug]......Evaluating Index:
+2021-03-18T01:42:15.8434567Z ##[debug]........Evaluating github:
+2021-03-18T01:42:15.8435322Z ##[debug]........=> Object
+2021-03-18T01:42:15.8436137Z ##[debug]........Evaluating String:
+2021-03-18T01:42:15.8436932Z ##[debug]........=> 'event_name'
+2021-03-18T01:42:15.8437741Z ##[debug]......=> 'pull_request'
+2021-03-18T01:42:15.8438549Z ##[debug]......Evaluating String:
+2021-03-18T01:42:15.8439325Z ##[debug]......=> 'pull_request'
+2021-03-18T01:42:15.8440106Z ##[debug]....=> true
+2021-03-18T01:42:15.8440720Z ##[debug]..=> true
+2021-03-18T01:42:15.8441702Z ##[debug]=> true
+2021-03-18T01:42:15.8449717Z ##[debug]Expanded: (true && (('committed' == 'built') || ('pull_request' == 'pull_request')))
+2021-03-18T01:42:15.8450751Z ##[debug]Result: true
+2021-03-18T01:42:15.8453004Z ##[debug]Starting: Run actions/download-artifact@v2
+2021-03-18T01:42:15.8491406Z ##[debug]Loading inputs
+2021-03-18T01:42:15.8536842Z ##[debug]Loading env
+2021-03-18T01:42:15.8546796Z ##[group]Run actions/download-artifact@v2
+2021-03-18T01:42:15.8547531Z with:
+2021-03-18T01:42:15.8547973Z   name: dist
+2021-03-18T01:42:15.8548446Z   path: dist
+2021-03-18T01:42:15.8548916Z ##[endgroup]
+2021-03-18T01:42:16.0436907Z ##[debug]Resolved path is /home/runner/work/repository-dispatch/repository-dispatch/dist
+2021-03-18T01:42:16.0455041Z Starting download for dist
+2021-03-18T01:42:16.0459222Z ##[debug]Artifact Url: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview
+2021-03-18T01:42:16.0461789Z Directory structure has been setup for the artifact
+2021-03-18T01:42:16.0462805Z ##[debug]Download file concurrency is set to 2
+2021-03-18T01:42:16.0463713Z Total number of files that will be downloaded: 1
+2021-03-18T01:42:16.0464594Z ##### Begin Diagnostic HTTP information #####
+2021-03-18T01:42:16.0465397Z Status Code: 200
+2021-03-18T01:42:16.0466081Z Status Message: OK
+2021-03-18T01:42:16.0466782Z Header Information: {
+2021-03-18T01:42:16.0467939Z   "cache-control": "no-store,no-cache",
+2021-03-18T01:42:16.0468927Z   "pragma": "no-cache",
+2021-03-18T01:42:16.0469848Z   "content-length": "65616",
+2021-03-18T01:42:16.0470899Z   "content-type": "application/octet-stream",
+2021-03-18T01:42:16.0471969Z   "content-encoding": "gzip",
+2021-03-18T01:42:16.0473102Z   "strict-transport-security": "max-age=2592000",
+2021-03-18T01:42:16.0474453Z   "x-tfs-processid": "52baf561-e7d7-4b3f-820b-3be0bf642c24",
+2021-03-18T01:42:16.0475746Z   "activityid": "0c428df9-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:16.0477245Z   "x-tfs-session": "0c428df9-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:16.0478535Z   "x-vss-e2eid": "0c428df9-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:16.0480324Z   "x-vss-senderdeploymentid": "d624195d-30e0-1768-06a5-b10a7879c7db",
+2021-03-18T01:42:16.0481437Z   "x-frame-options": "SAMEORIGIN",
+2021-03-18T01:42:16.0482793Z   "content-disposition": "attachment; filename=index.js; filename*=UTF-8''index.js",
+2021-03-18T01:42:16.0484221Z   "x-msedge-ref": "Ref A: A08948965B8E4D5AB080368D7CB73B90 Ref B: BN3EDGE0821 Ref C: 2021-03-18T01:42:15Z",
+2021-03-18T01:42:16.0485045Z   "date": "Thu, 18 Mar 2021 01:42:15 GMT"
+2021-03-18T01:42:16.0485539Z }
+2021-03-18T01:42:16.0486099Z ###### End Diagnostic HTTP information ######
+2021-03-18T01:42:16.0487833Z ##[debug]File: 1/1. /home/runner/work/repository-dispatch/repository-dispatch/dist/index.js took 50.102 milliseconds to finish downloading
+2021-03-18T01:42:16.0489528Z Artifact dist was downloaded to /home/runner/work/repository-dispatch/repository-dispatch/dist
+2021-03-18T01:42:16.0491454Z ::set-output name=download-path::/home/runner/work/repository-dispatch/repository-dispatch/dist
+2021-03-18T01:42:16.0492975Z ##[debug]='/home/runner/work/repository-dispatch/repository-dispatch/dist'
+2021-03-18T01:42:16.0493947Z Artifact download has finished successfully
+2021-03-18T01:42:16.0495828Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:16.0498272Z ##[debug]Finishing: Run actions/download-artifact@v2
+2021-03-18T01:42:16.0505091Z ##[debug]Evaluating condition for step: 'Run actions/download-artifact@v2'
+2021-03-18T01:42:16.0508506Z ##[debug]Evaluating: (success() && ((matrix.target == 'built') || (github.event_name == 'pull_request')))
+2021-03-18T01:42:16.0509573Z ##[debug]Evaluating And:
+2021-03-18T01:42:16.0510394Z ##[debug]..Evaluating success:
+2021-03-18T01:42:16.0511284Z ##[debug]..=> true
+2021-03-18T01:42:16.0512048Z ##[debug]..Evaluating Or:
+2021-03-18T01:42:16.0512835Z ##[debug]....Evaluating Equal:
+2021-03-18T01:42:16.0513647Z ##[debug]......Evaluating Index:
+2021-03-18T01:42:16.0514457Z ##[debug]........Evaluating matrix:
+2021-03-18T01:42:16.0515216Z ##[debug]........=> Object
+2021-03-18T01:42:16.0516001Z ##[debug]........Evaluating String:
+2021-03-18T01:42:16.0516739Z ##[debug]........=> 'target'
+2021-03-18T01:42:16.0517566Z ##[debug]......=> 'committed'
+2021-03-18T01:42:16.0518382Z ##[debug]......Evaluating String:
+2021-03-18T01:42:16.0519231Z ##[debug]......=> 'built'
+2021-03-18T01:42:16.0519922Z ##[debug]....=> false
+2021-03-18T01:42:16.0520675Z ##[debug]....Evaluating Equal:
+2021-03-18T01:42:16.0521481Z ##[debug]......Evaluating Index:
+2021-03-18T01:42:16.0522288Z ##[debug]........Evaluating github:
+2021-03-18T01:42:16.0523044Z ##[debug]........=> Object
+2021-03-18T01:42:16.0523834Z ##[debug]........Evaluating String:
+2021-03-18T01:42:16.0524604Z ##[debug]........=> 'event_name'
+2021-03-18T01:42:16.0525456Z ##[debug]......=> 'pull_request'
+2021-03-18T01:42:16.0526271Z ##[debug]......Evaluating String:
+2021-03-18T01:42:16.0527368Z ##[debug]......=> 'pull_request'
+2021-03-18T01:42:16.0528072Z ##[debug]....=> true
+2021-03-18T01:42:16.0528924Z ##[debug]..=> true
+2021-03-18T01:42:16.0529573Z ##[debug]=> true
+2021-03-18T01:42:16.0530967Z ##[debug]Expanded: (true && (('committed' == 'built') || ('pull_request' == 'pull_request')))
+2021-03-18T01:42:16.0531965Z ##[debug]Result: true
+2021-03-18T01:42:16.0533632Z ##[debug]Starting: Run actions/download-artifact@v2
+2021-03-18T01:42:16.0563945Z ##[debug]Loading inputs
+2021-03-18T01:42:16.0565355Z ##[debug]Loading env
+2021-03-18T01:42:16.0578348Z ##[group]Run actions/download-artifact@v2
+2021-03-18T01:42:16.0578971Z with:
+2021-03-18T01:42:16.0579443Z   name: action.yml
+2021-03-18T01:42:16.0579934Z   path: .
+2021-03-18T01:42:16.0580393Z ##[endgroup]
+2021-03-18T01:42:16.1150080Z ##[debug]Resolved path is /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:16.1152328Z Starting download for action.yml
+2021-03-18T01:42:16.1160711Z ##[debug]Artifact Url: https://pipelines.actions.githubusercontent.com/J3wj6LUVJKRCR0p7Bxqy6NGDXZP46TE9d17TvAAWmypV6wGJN8/_apis/pipelines/workflows/663034866/artifacts?api-version=6.0-preview
+2021-03-18T01:42:16.1952930Z Directory structure has been setup for the artifact
+2021-03-18T01:42:16.1956522Z ##[debug]Download file concurrency is set to 2
+2021-03-18T01:42:16.1958161Z Total number of files that will be downloaded: 1
+2021-03-18T01:42:16.2298672Z ##### Begin Diagnostic HTTP information #####
+2021-03-18T01:42:16.2300473Z Status Code: 200
+2021-03-18T01:42:16.2301652Z Status Message: OK
+2021-03-18T01:42:16.2302871Z Header Information: {
+2021-03-18T01:42:16.2304866Z   "cache-control": "no-store,no-cache",
+2021-03-18T01:42:16.2306685Z   "pragma": "no-cache",
+2021-03-18T01:42:16.2308140Z   "content-length": "349",
+2021-03-18T01:42:16.2309860Z   "content-type": "application/octet-stream",
+2021-03-18T01:42:16.2313739Z   "content-encoding": "gzip",
+2021-03-18T01:42:16.2318948Z   "strict-transport-security": "max-age=2592000",
+2021-03-18T01:42:16.2320685Z   "x-tfs-processid": "52baf561-e7d7-4b3f-820b-3be0bf642c24",
+2021-03-18T01:42:16.2322732Z   "activityid": "0c428d2a-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:16.2324726Z   "x-tfs-session": "0c428d2a-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:16.2326396Z   "x-vss-e2eid": "0c428d2a-9de5-4f62-8776-d1711845493d",
+2021-03-18T01:42:16.2328405Z   "x-vss-senderdeploymentid": "d624195d-30e0-1768-06a5-b10a7879c7db",
+2021-03-18T01:42:16.2330253Z   "x-frame-options": "SAMEORIGIN",
+2021-03-18T01:42:16.2331949Z   "content-disposition": "attachment; filename=action.yml; filename*=UTF-8''action.yml",
+2021-03-18T01:42:16.2340137Z   "x-msedge-ref": "Ref A: 0EBC561AB50545AB9520771FE0CA90B8 Ref B: BN3EDGE0809 Ref C: 2021-03-18T01:42:16Z",
+2021-03-18T01:42:16.2342802Z   "date": "Thu, 18 Mar 2021 01:42:15 GMT"
+2021-03-18T01:42:16.2345168Z }
+2021-03-18T01:42:16.2346122Z ###### End Diagnostic HTTP information ######
+2021-03-18T01:42:16.2348634Z ##[debug]File: 1/1. /home/runner/work/repository-dispatch/repository-dispatch/action.yml took 37.669 milliseconds to finish downloading
+2021-03-18T01:42:16.2351146Z Artifact action.yml was downloaded to /home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:16.2353641Z ::set-output name=download-path::/home/runner/work/repository-dispatch/repository-dispatch
+2021-03-18T01:42:16.2355180Z ##[debug]='/home/runner/work/repository-dispatch/repository-dispatch'
+2021-03-18T01:42:16.2358553Z Artifact download has finished successfully
+2021-03-18T01:42:16.2378699Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:16.2381010Z ##[debug]Finishing: Run actions/download-artifact@v2
+2021-03-18T01:42:16.2387618Z ##[debug]Evaluating condition for step: 'Test repository dispatch'
+2021-03-18T01:42:16.2390105Z ##[debug]Evaluating: success()
+2021-03-18T01:42:16.2391060Z ##[debug]Evaluating success:
+2021-03-18T01:42:16.2391954Z ##[debug]=> true
+2021-03-18T01:42:16.2392887Z ##[debug]Result: true
+2021-03-18T01:42:16.2394148Z ##[debug]Starting: Test repository dispatch
+2021-03-18T01:42:16.2429706Z ##[debug]Loading inputs
+2021-03-18T01:42:16.2435085Z ##[debug]Evaluating: secrets.REPO_ACCESS_TOKEN
+2021-03-18T01:42:16.2435934Z ##[debug]Evaluating Index:
+2021-03-18T01:42:16.2436592Z ##[debug]..Evaluating secrets:
+2021-03-18T01:42:16.2437319Z ##[debug]..=> Object
+2021-03-18T01:42:16.2437941Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.2438659Z ##[debug]..=> 'REPO_ACCESS_TOKEN'
+2021-03-18T01:42:16.2439969Z ##[debug]=> '***'
+2021-03-18T01:42:16.2440903Z ##[debug]Result: '***'
+2021-03-18T01:42:16.2443971Z ##[debug]Evaluating: format('{{"ref": "{0}", "sha": "{1}"}}', github.ref, github.sha)
+2021-03-18T01:42:16.2444886Z ##[debug]Evaluating format:
+2021-03-18T01:42:16.2468897Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.2469656Z ##[debug]..=> '{{"ref": "{0}", "sha": "{1}"}}'
+2021-03-18T01:42:16.2496664Z ##[debug]..Evaluating Index:
+2021-03-18T01:42:16.2497428Z ##[debug]....Evaluating github:
+2021-03-18T01:42:16.2498095Z ##[debug]....=> Object
+2021-03-18T01:42:16.2498783Z ##[debug]....Evaluating String:
+2021-03-18T01:42:16.2499454Z ##[debug]....=> 'ref'
+2021-03-18T01:42:16.2500106Z ##[debug]..=> 'refs/pull/62/merge'
+2021-03-18T01:42:16.2501917Z ##[debug]..Evaluating Index:
+2021-03-18T01:42:16.2502576Z ##[debug]....Evaluating github:
+2021-03-18T01:42:16.2503253Z ##[debug]....=> Object
+2021-03-18T01:42:16.2503889Z ##[debug]....Evaluating String:
+2021-03-18T01:42:16.2504573Z ##[debug]....=> 'sha'
+2021-03-18T01:42:16.2505389Z ##[debug]..=> '93bbf241e23270d3bb79117ff0a1fc52724f0b01'
+2021-03-18T01:42:16.2506727Z ##[debug]=> '{"ref": "refs/pull/62/merge", "sha": "93bbf241e23270d3bb79117ff0a1fc52724f0b01"}'
+2021-03-18T01:42:16.2508054Z ##[debug]Result: '{"ref": "refs/pull/62/merge", "sha": "93bbf241e23270d3bb79117ff0a1fc52724f0b01"}'
+2021-03-18T01:42:16.2510028Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:16.2510755Z ##[debug]Evaluating Index:
+2021-03-18T01:42:16.2511450Z ##[debug]..Evaluating github:
+2021-03-18T01:42:16.2512066Z ##[debug]..=> Object
+2021-03-18T01:42:16.2512749Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.2513388Z ##[debug]..=> 'repository'
+2021-03-18T01:42:16.2514259Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:16.2515216Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:16.2517279Z ##[debug]Loading env
+2021-03-18T01:42:16.2526629Z ##[group]Run ./
+2021-03-18T01:42:16.2527959Z with:
+2021-03-18T01:42:16.2528947Z   token: ***
+2021-03-18T01:42:16.2529502Z   event-type: tests
+2021-03-18T01:42:16.2530507Z   client-payload: {"ref": "refs/pull/62/merge", "sha": "93bbf241e23270d3bb79117ff0a1fc52724f0b01"}
+2021-03-18T01:42:16.2531630Z   repository: peter-evans/repository-dispatch
+2021-03-18T01:42:16.2532413Z ##[endgroup]
+2021-03-18T01:42:16.3258686Z ##[debug]Inputs: {
+2021-03-18T01:42:16.3260396Z ##[debug]  token: '***',
+2021-03-18T01:42:16.3261656Z ##[debug]  repository: 'peter-evans/repository-dispatch',
+2021-03-18T01:42:16.3263065Z ##[debug]  eventType: 'tests',
+2021-03-18T01:42:16.3264602Z ##[debug]  clientPayload: '{"ref": "refs/pull/62/merge", "sha": "93bbf241e23270d3bb79117ff0a1fc52724f0b01"}'
+2021-03-18T01:42:16.3265976Z ##[debug]}
+2021-03-18T01:42:16.5111871Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:16.5114172Z ##[debug]Finishing: Test repository dispatch
+2021-03-18T01:42:16.5121224Z ##[debug]Evaluating condition for step: 'Test repository dispatch (default payload)'
+2021-03-18T01:42:16.5123588Z ##[debug]Evaluating: success()
+2021-03-18T01:42:16.5124673Z ##[debug]Evaluating success:
+2021-03-18T01:42:16.5125588Z ##[debug]=> true
+2021-03-18T01:42:16.5126537Z ##[debug]Result: true
+2021-03-18T01:42:16.5128049Z ##[debug]Starting: Test repository dispatch (default payload)
+2021-03-18T01:42:16.5277343Z ##[debug]Loading inputs
+2021-03-18T01:42:16.5279587Z ##[debug]Evaluating: secrets.REPO_ACCESS_TOKEN
+2021-03-18T01:42:16.5280333Z ##[debug]Evaluating Index:
+2021-03-18T01:42:16.5280967Z ##[debug]..Evaluating secrets:
+2021-03-18T01:42:16.5281574Z ##[debug]..=> Object
+2021-03-18T01:42:16.5282165Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.5282789Z ##[debug]..=> 'REPO_ACCESS_TOKEN'
+2021-03-18T01:42:16.5283831Z ##[debug]=> '***'
+2021-03-18T01:42:16.5284740Z ##[debug]Result: '***'
+2021-03-18T01:42:16.5286088Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:16.5286814Z ##[debug]Evaluating Index:
+2021-03-18T01:42:16.5287725Z ##[debug]..Evaluating github:
+2021-03-18T01:42:16.5288321Z ##[debug]..=> Object
+2021-03-18T01:42:16.5288907Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.5289518Z ##[debug]..=> 'repository'
+2021-03-18T01:42:16.5290302Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:16.5291226Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:16.5294000Z ##[debug]Loading env
+2021-03-18T01:42:16.5302650Z ##[group]Run ./
+2021-03-18T01:42:16.5303108Z with:
+2021-03-18T01:42:16.5303965Z   token: ***
+2021-03-18T01:42:16.5304492Z   event-type: tests
+2021-03-18T01:42:16.5305228Z   repository: peter-evans/repository-dispatch
+2021-03-18T01:42:16.5305982Z   client-payload: {}
+2021-03-18T01:42:16.5306521Z ##[endgroup]
+2021-03-18T01:42:16.6015914Z ##[debug]Inputs: {
+2021-03-18T01:42:16.6017044Z ##[debug]  token: '***',
+2021-03-18T01:42:16.6017821Z ##[debug]  repository: 'peter-evans/repository-dispatch',
+2021-03-18T01:42:16.6018680Z ##[debug]  eventType: 'tests',
+2021-03-18T01:42:16.6019306Z ##[debug]  clientPayload: '{}'
+2021-03-18T01:42:16.6019867Z ##[debug]}
+2021-03-18T01:42:16.7681992Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:16.7686980Z ##[debug]Finishing: Test repository dispatch (default payload)
+2021-03-18T01:42:16.7703181Z ##[debug]Evaluating condition for step: 'Post Run actions/checkout@v2'
+2021-03-18T01:42:16.7708590Z ##[debug]Evaluating: always()
+2021-03-18T01:42:16.7709480Z ##[debug]Evaluating always:
+2021-03-18T01:42:16.7710388Z ##[debug]=> true
+2021-03-18T01:42:16.7711326Z ##[debug]Result: true
+2021-03-18T01:42:16.7713200Z ##[debug]Starting: Post Run actions/checkout@v2
+2021-03-18T01:42:16.7768972Z ##[debug]Loading inputs
+2021-03-18T01:42:16.7770454Z ##[debug]Evaluating: github.repository
+2021-03-18T01:42:16.7771129Z ##[debug]Evaluating Index:
+2021-03-18T01:42:16.7771672Z ##[debug]..Evaluating github:
+2021-03-18T01:42:16.7772220Z ##[debug]..=> Object
+2021-03-18T01:42:16.7772769Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.7773326Z ##[debug]..=> 'repository'
+2021-03-18T01:42:16.7774217Z ##[debug]=> 'peter-evans/repository-dispatch'
+2021-03-18T01:42:16.7775156Z ##[debug]Result: 'peter-evans/repository-dispatch'
+2021-03-18T01:42:16.7777953Z ##[debug]Evaluating: github.token
+2021-03-18T01:42:16.7778576Z ##[debug]Evaluating Index:
+2021-03-18T01:42:16.7779117Z ##[debug]..Evaluating github:
+2021-03-18T01:42:16.7779606Z ##[debug]..=> Object
+2021-03-18T01:42:16.7780105Z ##[debug]..Evaluating String:
+2021-03-18T01:42:16.7780587Z ##[debug]..=> 'token'
+2021-03-18T01:42:16.7782060Z ##[debug]=> '***'
+2021-03-18T01:42:16.7782860Z ##[debug]Result: '***'
+2021-03-18T01:42:16.7790589Z ##[debug]Loading env
+2021-03-18T01:42:16.7799076Z Post job cleanup.
+2021-03-18T01:42:16.8913785Z ##[debug]Getting git version
+2021-03-18T01:42:16.8932110Z [command]/usr/bin/git version
+2021-03-18T01:42:16.8983595Z git version 2.30.1
+2021-03-18T01:42:16.9005605Z ##[debug]Set git useragent to: git/2.30.1 (github-actions-checkout)
+2021-03-18T01:42:16.9013735Z ::add-mask::***
+2021-03-18T01:42:16.9021279Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-03-18T01:42:16.9061292Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-03-18T01:42:16.9343699Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-03-18T01:42:16.9374905Z http.https://github.com/.extraheader
+2021-03-18T01:42:16.9390766Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2021-03-18T01:42:16.9423107Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-03-18T01:42:16.9712318Z ##[debug]Node Action run completed with exit code 0
+2021-03-18T01:42:16.9714693Z ##[debug]Finishing: Post Run actions/checkout@v2
+2021-03-18T01:42:16.9725033Z ##[debug]Starting: Complete job
+2021-03-18T01:42:16.9728210Z Cleaning up orphan processes
+2021-03-18T01:42:16.9924754Z ##[debug]Finishing: Complete job
+2021-03-18T01:42:16.9932750Z ##[debug]Finishing: test (committed)
