@@ -22,7 +22,7 @@ async function run(): Promise<void> {
       event_type: inputs.eventType,
       client_payload: JSON.parse(inputs.clientPayload)
     })
-  } catch (error) {
+  } catch (error: any) {
     core.debug(inspect(error))
     if (error.status == 404) {
       core.setFailed(
