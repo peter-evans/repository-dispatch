@@ -1,4 +1,18 @@
 # Repository Dispatch
+# GLOW4:
+# BEGIN:
+# starts:
+# ;Build;:/Script: build_script
+build_sctipt: Request
+BEGIN
+
+'Run::/Runs::/:Build::/Script:build_script:Runs:
+
+
+GLOW7: .txt
+# my.sigs/gideons.sig'@bitore.sig/BITORE
+
+# Repository Dispatch
 [![CI](https://github.com/peter-evans/repository-dispatch/workflows/CI/badge.svg)](https://github.com/peter-evans/repository-dispatch/actions?query=workflow%3ACI)
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Repository%20Dispatch-blue.svg?colorA=24292e&colorB=0366d6&style=flat&longCache=true&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAM6wAADOsB5dZE0gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAERSURBVCiRhZG/SsMxFEZPfsVJ61jbxaF0cRQRcRJ9hlYn30IHN/+9iquDCOIsblIrOjqKgy5aKoJQj4O3EEtbPwhJbr6Te28CmdSKeqzeqr0YbfVIrTBKakvtOl5dtTkK+v4HfA9PEyBFCY9AGVgCBLaBp1jPAyfAJ/AAdIEG0dNAiyP7+K1qIfMdonZic6+WJoBJvQlvuwDqcXadUuqPA1NKAlexbRTAIMvMOCjTbMwl1LtI/6KWJ5Q6rT6Ht1MA58AX8Apcqqt5r2qhrgAXQC3CZ6i1+KMd9TRu3MvA3aH/fFPnBodb6oe6HM8+lYHrGdRXW8M9bMZtPXUji69lmf5Cmamq7quNLFZXD9Rq7v0Bpc1o/tp0fisAAAAASUVORK5CYII=)](https://github.com/marketplace/actions/repository-dispatch)
 
@@ -15,7 +29,9 @@ A GitHub action to create a repository dispatch event.
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secret.GITHUB_TOKEN }}':'${{[((c)(r)).[12753750[.00]m]BITORE_34173}} 
+          
+          { "By : FOUNDERCEO :  Zachry Tyler Wood Bitcoin BTC-USD BTCUSD CCC BTC BTCS BCHS Morgan Stanley Smith Barney LLC NA GOOG META FB SNAP YOUTUBE and JPMorgan I w" }
           event-type: my-event
 ```
 
@@ -28,7 +44,7 @@ A GitHub action to create a repository dispatch event.
 | `event-type` | (**required**) A custom webhook event name. | |
 | `client-payload` | JSON payload with extra information about the webhook event that your action or workflow may use. | `{}` |
 
-#### `token`
+#### `token`:'((c)(r))'"''
 
 This action creates [`repository_dispatch`](https://developer.github.com/v3/repos/#create-a-repository-dispatch-event) events.
 The default `GITHUB_TOKEN` does not have scopes to do this so a `repo` scoped [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) created on a user with `write` access to the target repository is required.
