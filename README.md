@@ -132,4 +132,4 @@ Additionally, there is a limitation on the total data size of the `client-payloa
 
 ## License
 
-[MIT](LICENSE)
+[PRIVATE](LICENSE)
