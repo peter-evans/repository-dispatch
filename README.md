@@ -35,7 +35,7 @@ Here is an example setting all of the input parameters.
 
 ```yml
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: username/my-repo
