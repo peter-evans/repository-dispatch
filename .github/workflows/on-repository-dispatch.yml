@@ -11,7 +11,7 @@ jobs:
           PAYLOAD_CONTEXT: ${{ toJson(github.event.client_payload) }}
         run: echo "$PAYLOAD_CONTEXT"
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         if: github.event.client_payload.ref != ''
         with:
           ref: ${{ github.event.client_payload.ref }}
