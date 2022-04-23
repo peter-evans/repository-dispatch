@@ -10,7 +10,6 @@ A GitHub action to create a repository dispatch event.
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
           event-type: my-event
 ```
 
@@ -18,7 +17,7 @@ A GitHub action to create a repository dispatch event.
 
 | Name | Description | Default |
 | --- | --- | --- |
-| `token` | (**required**) A `repo` scoped GitHub [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). See [token](#token) for further details. | |
+| `token` | A `repo` scoped GitHub [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). See [token](#token) for further details. | `github.token` |
 | `repository` | The full name of the repository to send the dispatch. | `github.repository` (current repository) |
 | `event-type` | (**required**) A custom webhook event name. | |
 | `client-payload` | JSON payload with extra information about the webhook event that your action or workflow may use. | `{}` |
@@ -37,7 +36,6 @@ Here is an example setting all of the input parameters.
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: username/my-repo
           event-type: my-event
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
@@ -80,7 +78,6 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: ${{ matrix.repo }}
           event-type: my-event
 ```
