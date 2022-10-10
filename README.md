@@ -32,7 +32,7 @@ permissions:
   actions: write
 ```
 
-The solution to trigger other repositories is to manually create a PAT and store it as a secret e.g. `${{ secrets.PERSONAL_TOKEN }}`.
+The solution to trigger other repositories is to manually create a [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) and store it as a secret e.g. `${{ secrets.PERSONAL_TOKEN }}`.
 
 If you will be dispatching to a public repository then you can use the more limited `public_repo` scope.
 
