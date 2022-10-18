@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/peter-evans/repository-dispatch#readme",
   "dependencies": {
-    "@actions/core": "^1.9.1",
+    "@actions/core": "^1.10.0",
     "@actions/github": "^5.0.0"
   },
   "devDependencies": {
