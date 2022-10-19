@@ -18,15 +18,22 @@ A GitHub action to create a repository dispatch event.
 
 | Name | Description | Default |
 | --- | --- | --- |
-| `token` | (**required**) A `repo` scoped GitHub [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). See [token](#token) for further details. | |
+| `token` | (**required**) A GitHub access token with `actions: write` permission to the repository being dispatched. | |
 | `repository` | The full name of the repository to send the dispatch. | `github.repository` (current repository) |
 | `event-type` | (**required**) A custom webhook event name. | |
 | `client-payload` | JSON payload with extra information about the webhook event that your action or workflow may use. | `{}` |
 
 #### `token`
 
-This action creates [`repository_dispatch`](https://developer.github.com/v3/repos/#create-a-repository-dispatch-event) events.
-The default `GITHUB_TOKEN` does not have scopes to do this so a `repo` scoped [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) created on a user with `write` access to the target repository is required.
+This action creates [`repository_dispatch`](https://developer.github.com/v3/repos/#create-a-repository-dispatch-event) events. The default `GITHUB_TOKEN` 
+token can only be used if you are dispatching the same repo. In this case you must assign the permission `action: write` to the token, see [permissions api](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs). Example:
+```yaml
+permissions:
+  actions: write
+```
+
+The solution to trigger other repositories is to manually create a [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) and store it as a secret e.g. `${{ secrets.PERSONAL_TOKEN }}`.
+
 If you will be dispatching to a public repository then you can use the more limited `public_repo` scope.
 
 ## Example
