@@ -14,7 +14,6 @@ on:
 permissions:
   pull-requests: write
   contents: write
-  actions: write
 
 jobs:
   build:
