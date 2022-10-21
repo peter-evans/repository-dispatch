@@ -2,6 +2,16 @@ import * as core from '@actions/core'
 import * as github from '@actions/github'
 import {inspect} from 'util'
 
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+function hasErrorStatus(error: any): error is {status: number} {
+  return typeof error.code === 'number'
+}
+
+function getErrorMessage(error: unknown) {
+  if (error instanceof Error) return error.message
+  return String(error)
+}
+
 async function run(): Promise<void> {
   try {
     const inputs = {
@@ -22,14 +32,14 @@ async function run(): Promise<void> {
       event_type: inputs.eventType,
       client_payload: JSON.parse(inputs.clientPayload)
     })
-  } catch (error: any) {
+  } catch (error) {
     core.debug(inspect(error))
-    if (error.status == 404) {
+    if (hasErrorStatus(error) && error.status == 404) {
       core.setFailed(
         'Repository not found, OR token has insufficient permissions.'
       )
     } else {
-      core.setFailed(error.message)
+      core.setFailed(getErrorMessage(error))
     }
   }
 }
