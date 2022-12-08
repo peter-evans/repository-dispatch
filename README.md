@@ -19,7 +19,7 @@ Dispatch an event to a remote repository using a `repo` scoped [Personal Access 
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.PAT }}
           event-type: my-event
 ```
 
@@ -48,7 +48,7 @@ Here is an example setting all of the input parameters.
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.PAT }}
           repository: username/my-repo
           event-type: my-event
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
@@ -91,7 +91,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.PAT }}
           repository: ${{ matrix.repo }}
           event-type: my-event
 ```
