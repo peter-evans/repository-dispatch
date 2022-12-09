@@ -81,6 +81,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
+          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
           commit-message: Update distribution
           title: Update distribution
           body: |
