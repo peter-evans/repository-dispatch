@@ -20,6 +20,7 @@ Dispatch an event to a remote repository using a `repo` scoped [Personal Access 
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.PAT }}
+          repository: username/my-repo
           event-type: my-event
 ```
 
