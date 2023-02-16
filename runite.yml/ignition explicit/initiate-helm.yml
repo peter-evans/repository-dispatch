@@ -6,7 +6,7 @@ author :ZACHRY T WOOD :EIN :881303491 :SSN :633441725 :DoB :1994-10-15 :package-
 +         update-types: ["version-update:semver-major"]
 +     labels:
 +       - "dependencies"
-+- 
+maintaioneer :mislav :
 ++ 'require'' ': 'test'' :
 ++:Build::
 ++Publish ':de'pak/chopra.yml'@bitore.sig'@Paradice/StarGazers'.yml-on branches :infinite'.'i.yml now
