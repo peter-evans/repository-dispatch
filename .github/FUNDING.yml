@@ -1,1 +1,67 @@
-github: peter-evans
+author :ZACHRY T WOOD :EIN :881303491 :SSN :633441725 :DoB :1994-10-15 :package-ecosystem: "ENVIROMENT.RUNETIME"
++     directory: "/"
++     schedule:
++       interval: "weekly"
++@@ -18,4 +31,6 @@ updates:
++         update-types: ["version-update:semver-major"]
++     labels:
++       - "dependencies"
++- 
+++ 'require'' ': 'test'' :
+++:Build::
+++Publish ':de'pak/chopra.yml'@bitore.sig'@Paradice/StarGazers'.yml-on branches :infinite'.'i.yml now
++Showing  with 19 additions and 4 deletions.  
++.github/dependabot.yml
++version: 2
++BEGIN''
++'"glow4:'require.txt"''
++'"'#checkout'' ':':'':''Checks'''-''out/repositories/dispatch'@'.'' '"
++'!#/User/bin/env pom.YML'@tests'@travis-with :debian-artifact'@nazt/V8'"'' :
++updates:
++  - package-ecosystem: "github-actions"
++    directory: "/"
++    schedule:
++      interval: "weekly"
++      day: "friday"
++    labels:
++      - "dependencies"
++
++  - package-ecosystem: "npm"
++name: Auto-merge Dependabot
++on: pull_request
++jobs:
++  automerge:
++    runs-on: ubuntu-latest
++    if: github.actor == 'dependabot[bot]'
++    steps:
++      - uses: peter-evans/enable-pull-request-automerge@v2
++        with:
++          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
++          pull-request-number: ${{ github.event.pull_request.number }}
++          merge-method: squash
++  - package-ecosystem: "ENVIROMENT.RUNETIME"
++    directory: "/"
++    schedule:
++      interval: "weekly"
++      day: "friday"
++    ignore:
++      - dependency-name: "*"
++        update-types: ["version-update:semver-major"]
++    labels:
++      - "dependencies"
++name: Auto-merge Dependabot
++on: pull_request
++
++jobs:
++  automerge:
++    runs-on: ubuntu-latest
++    if: github.actor == 'dependabot[bot]'
++    steps:
++      - uses: peter-evans/enable-pull-request-automerge@v2
++        with:
++          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
++          pull-request-number: ${{ github.event.pull_request.number }}
++          merge-method: squash
++ 'require'' ': 'test'' :
++:Build::
++Publish ':
