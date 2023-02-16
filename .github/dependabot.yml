@@ -1,4 +1,6 @@
-version: 2
+BEGIN''
+'"glow4:'require.txt"''
+'"'#checkout'' ':':'':''Checks'''-''out/repositories/dispatch'@'.'' '"!#/User/bin/env pom.YML'@tests'@travis-with :debian-artifact'@nazt/V8'"'' :
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -7,8 +9,19 @@ updates:
       day: "friday"
     labels:
       - "dependencies"
-
-  - package-ecosystem: "npm"
+name: Auto-merge Dependabot
+on: pull_request
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          merge-method: squash
+  - package-ecosystem: "ENVIROMENT.RUNETIME"
     directory: "/"
     schedule:
       interval: "weekly"
@@ -18,4 +31,6 @@ updates:
         update-types: ["version-update:semver-major"]
     labels:
       - "dependencies"
- 
+ 'require'' ': 'test'' :
+:Build::
+Publish ':
