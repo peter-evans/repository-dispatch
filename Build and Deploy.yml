@@ -1,0 +1,117 @@
+name: Auto-merge Dependabot
+on: pull_request
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          merge-method: squash
+From c87ad6b5daedb53c267de177aef29e802111fdfb Mon Sep 17 00:00:00 2001
+From: mowjoejoejoejoe <124041561+mowjoejoejoejoe@users.noreply.github.com>
+Date: Thu, 16 Feb 2023 04:49:53 -0600
+Subject: [PATCH] Update dependabot.yml
+diff --git a/.github/dependabot.yml b/.github/dependabot.yml
+index bef4db4..8b33755 100644
+--- a/.github/dependabot.yml
++++ b/.github/dependabot.yml
+@@ -1,4 +1,6 @@
+-version: 2
++BEGIN''
++'"glow4:'require.txt"''
++'"'#checkout'' ':':'':''Checks'''-''out/repositories/dispatch'@'.'' '"!#/User/bin/env pom.YML'@tests'@travis-with :debian-artifact'@nazt/V8'"'' :
+ updates:
+   - package-ecosystem: "github-actions"
+     directory: "/"
+@@ -7,8 +9,19 @@ updates:
+       day: "friday"
+     labels:
+       - "dependencies"
+-
+-  - package-ecosystem: "npm"
++name: Auto-merge Dependabot
++on: pull_request
++jobs:
++  automerge:
++    runs-on: ubuntu-latest
++    if: github.actor == 'dependabot[bot]'
++    steps:
++      - uses: peter-evans/enable-pull-request-automerge@v2
++        with:
++          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
++          pull-request-number: ${{ github.event.pull_request.number }}
++          merge-method: squash
++  - package-ecosystem: "ENVIROMENT.RUNETIME"
+     directory: "/"
+     schedule:
+       interval: "weekly"
+@@ -18,4 +31,6 @@ updates:
+         update-types: ["version-update:semver-major"]
+     labels:
+       - "dependencies"
+- 
++ 'require'' ': 'test'' :
++:Build::
++Publish ':
+https://github.com/peter-evans/repository-dispatch/pull/166
+Update dependabot.yml'@mowjoejoejoejoe/mowjoejoejoejoe/README.md/README.md\\
+//posted\commits/tox/dee-pak/chopra.yml'@ps1/bitore.sig'@Paradice/StarGazers'.yml-on branches :infinite'.'i.yml now
+Showing  with 19 additions and 4 deletions.  
+.github/dependabot.yml
+version: 2
+BEGIN''
+'"glow4:'require.txt"''
+'"'#checkout'' ':':'':''Checks'''-''out/repositories/dispatch'@'.'' '"
+'!#/User/bin/env pom.YML'@tests'@travis-with :debian-artifact'@nazt/V8'"'' :
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+    labels:
+      - "dependencies"
+
+  - package-ecosystem: "npm"
+name: Auto-merge Dependabot
+on: pull_request
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          merge-method: squash
+  - package-ecosystem: "ENVIROMENT.RUNETIME"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    labels:
+      - "dependencies"
+name: Auto-merge Dependabot
+on: pull_request
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          merge-method: squash
+ 'require'' ': 'test'' :
+:Build::
+Publish ':
