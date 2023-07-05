@@ -41,6 +41,10 @@ The default `GITHUB_TOKEN` token can only be used if you are dispatching the sam
 To dispatch to a remote repository you must create a [Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) with the `repo` scope and store it as a secret.
 If you will be dispatching to a public repository then you can use the more limited `public_repo` scope.
 
+You can also use a fine grained access token (beta). It needs the following permissions on the target repositories:
+ - contents: read & write
+ - metadata: read only (will automatically be selected on the GitHub settings page when selecting the contents permission above)
+
 ## Example
 
 Here is an example setting all of the input parameters.
