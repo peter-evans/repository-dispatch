@@ -44,7 +44,7 @@ const github = __importStar(__nccwpck_require__(5438));
 const util_1 = __nccwpck_require__(3837);
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 function hasErrorStatus(error) {
-    return typeof error.code === 'number';
+    return typeof error.status === 'number';
 }
 function getErrorMessage(error) {
     if (error instanceof Error)

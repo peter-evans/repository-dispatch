@@ -4,7 +4,7 @@ import {inspect} from 'util'
 
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 function hasErrorStatus(error: any): error is {status: number} {
-  return typeof error.code === 'number'
+  return typeof error.status === 'number'
 }
 
 function getErrorMessage(error: unknown) {
