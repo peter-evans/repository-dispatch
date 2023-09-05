@@ -1,6 +1,10 @@
 name: Test Dispatch
 on: workflow_dispatch
 
+permissions:
+  pull-requests: write
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -8,6 +12,6 @@ jobs:
       - name: Test repository dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.PUBLIC_REPO_SCOPED_TOKEN }}
+          # token: ${{ secrets.PUBLIC_REPO_SCOPED_TOKEN }}
           event-type: tests
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
