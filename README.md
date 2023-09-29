@@ -125,6 +125,32 @@ client-payload: '{"github": ${{ toJson(github) }}}'
 
 Additionally, there is a limitation on the total data size of the `client-payload`. A very large payload may result in a `client_payload is too large` error.
 
+### Multiline
+
+A multiline `client-payload` can be set directly in YAML, as in the following example.
+
+```yml
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.PAT }}
+          repository: username/my-repo
+          event-type: my-event
+          client-payload: |-
+            {
+              "repo": {
+                "name": "${{ github.repository }}",
+                "branch": "${{ needs.build_cfg.outputs.REPO_BRANCH }}",
+                "tag": "${{ needs.build_cfg.outputs.REPO_TAG }}"
+              },
+              "deployment": {
+                "project": "${{ env.MY_PROJECT }}",
+                "container": "${{ env.MY_CONTAINER }}",
+                "deploy_msg": "${{ env.SLACK_DEPLOY_MSG }}",
+              }
+            }
+```
+
 ## License
 
 [MIT](LICENSE)
