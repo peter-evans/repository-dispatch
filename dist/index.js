@@ -573,6 +573,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.prepareKeyValueMessage = exports.issueFileCommand = void 0;
 // We use any as a valid input type
 /* eslint-disable @typescript-eslint/no-explicit-any */
+const crypto = __importStar(__nccwpck_require__(6982));
 const fs = __importStar(__nccwpck_require__(9896));
 const os = __importStar(__nccwpck_require__(857));
 const utils_1 = __nccwpck_require__(302);
@@ -10318,6 +10319,14 @@ module.exports = require("assert");
 
 "use strict";
 module.exports = require("child_process");
+
+/***/ }),
+
+/***/ 6982:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
 
 /***/ }),
 
