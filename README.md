@@ -6,6 +6,8 @@ A GitHub action to create a repository dispatch event.
 
 ## Usage
 
+
+
 Dispatch an event to the current repository.
 ```yml
       - name: Repository Dispatch
