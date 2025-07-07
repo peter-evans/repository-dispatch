@@ -6,15 +6,41 @@ A GitHub action to create a repository dispatch event.
 
 ## Usage
 
-Dispatch an event to the current repository.
-```yml
-      - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          event-type: my-event
+### Dispatching an event to the current repository
+
+In the caller workflow file:
+
+```diff
+jobs:
+  your_job_name:
+    runs-on: ubuntu-latest
++    permissions:
++      contents: write
+     steps:
+       …
++       - name: Repository Dispatch
++         uses: peter-evans/repository-dispatch@v3
++         with:
++           event-type: my-event
 ```
 
-Dispatch an event to a remote repository using a `repo` scoped [Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+In the callee workflow file:
+
+```diff
+name: YourWorkflow
+
++on:
++  repository_dispatch:
++    types: [my-event]
+
+jobs:
+  …
+```
+
+### Dispatching an event to a remote repository
+
+Use a `repo` scoped [Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+
 ```yml
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v3
@@ -28,7 +54,7 @@ Dispatch an event to a remote repository using a `repo` scoped [Personal Access 
 
 | Name | Description | Default |
 | --- | --- | --- |
-| `token` | `GITHUB_TOKEN` (permissions `contents: write`) or a `repo` scoped [Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). See [token](#token) for further details. | `GITHUB_TOKEN` |
+| `token` | `GITHUB_TOKEN` or a `repo` scoped [Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). See [token](#token) for further details. | `GITHUB_TOKEN` |
 | `repository` | The full name of the repository to send the dispatch. | `github.repository` (current repository) |
 | `event-type` | (**required**) A custom webhook event name. | |
 | `client-payload` | JSON payload with extra information about the webhook event that your action or workflow may use. | `{}` |
