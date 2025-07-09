@@ -10,31 +10,27 @@ A GitHub action to create a repository dispatch event.
 
 In the caller workflow file:
 
-```diff
+```yml
 jobs:
-  your_job_name:
+  Dispatch:
     runs-on: ubuntu-latest
-+    permissions:
-+      contents: write
+    permissions:
+      contents: write
      steps:
-       …
-+       - name: Repository Dispatch
-+         uses: peter-evans/repository-dispatch@v3
-+         with:
-+           event-type: my-event
+       - name: Repository Dispatch
+         uses: peter-evans/repository-dispatch@v3
+         with:
+           event-type: my-event
 ```
 
 In the callee workflow file:
 
-```diff
-name: YourWorkflow
+```yml
+name: MyWorkflow
 
-+on:
-+  repository_dispatch:
-+    types: [my-event]
-
-jobs:
-  …
+on:
+  repository_dispatch:
+    types: [my-event]
 ```
 
 ### Dispatching an event to a remote repository
