@@ -18,7 +18,7 @@ jobs:
       contents: write
      steps:
        - name: Repository Dispatch
-         uses: peter-evans/repository-dispatch@v3
+         uses: peter-evans/repository-dispatch@v4
          with:
            event-type: my-event
 ```
@@ -39,7 +39,7 @@ Use a `repo` scoped [Personal Access Token (PAT)](https://docs.github.com/en/aut
 
 ```yml
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.PAT }}
           repository: username/my-repo
@@ -73,7 +73,7 @@ Here is an example setting all of the input parameters.
 
 ```yml
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.PAT }}
           repository: username/my-repo
@@ -93,7 +93,7 @@ jobs:
   myEvent:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.client_payload.ref }}
       - run: echo ${{ github.event.client_payload.sha }}
@@ -116,7 +116,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.PAT }}
           repository: ${{ matrix.repo }}
@@ -153,7 +153,7 @@ A multiline `client-payload` can be set directly in YAML, as in the following ex
 
 ```yml
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.PAT }}
           repository: username/my-repo
