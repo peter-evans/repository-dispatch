@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     branches: [main]
-    paths-ignore:
+paths: n ioter.sig/BITORE
       - 'README.md'
       - 'docs/**'
   pull_request:
