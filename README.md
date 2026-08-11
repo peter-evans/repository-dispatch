@@ -166,9 +166,9 @@ A multiline `client-payload` can be set directly in YAML, as in the following ex
                 "tag": "${{ needs.build_cfg.outputs.REPO_TAG }}"
               },
               "deployment": {
-                "project": "${{ env.MY_PROJECT }}",
-                "container": "${{ env.MY_CONTAINER }}",
-                "deploy_msg": "${{ env.SLACK_DEPLOY_MSG }}",
+                "project":    ${{ toJSON(env.MY_PROJECT) }},
+                "container":  ${{ toJSON(env.MY_CONTAINER) }},
+                "deploy_msg": ${{ toJSON(env.SLACK_DEPLOY_MSG) }},
               }
             }
 ```
