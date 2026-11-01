@@ -42,12 +42,12 @@
     "eslint": "^8.57.1",
     "eslint-plugin-github": "^4.10.2",
     "eslint-plugin-jest": "^27.9.0",
-    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-prettier": "^5.5.7",
     "jest": "^30.5.2",
     "jest-circus": "^30.2.0",
     "js-yaml": "^4.3.2",
-    "prettier": "^3.9.9",
-    "ts-jest": "^29.4.14",
+    "prettier": "^3.9.10",
+    "ts-jest": "^29.4.15",
     "typescript": "^5.4.5"
   }
 }
